@@ -1,0 +1,1759 @@
+{
+    "colleges": [
+        {
+            "id": 1,
+            "name": "Indian Institute of Technology Bombay",
+            "location": "Mumbai, Maharashtra",
+            "founded": 1958,
+            "type": "Public",
+            "tuition": 200000,
+            "acceptance_rate": 0.5,
+            "enrollment": 11000,
+            "programs": [
+                "Computer Science",
+                "Electrical Engineering",
+                "Mechanical Engineering",
+                "Chemical Engineering",
+                "Physics"
+            ],
+            "rankings": {
+                "national": 3,
+                "global": 172,
+                "research": 1
+            },
+            "facilities": [
+                "Research Labs",
+                "Library",
+                "Sports Complex",
+                "Student Hostels",
+                "Innovation Hub"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Indian Institute of Technology Delhi",
+            "location": "New Delhi, Delhi",
+            "founded": 1961,
+            "type": "Public",
+            "tuition": 200000,
+            "acceptance_rate": 0.5,
+            "enrollment": 9500,
+            "programs": [
+                "Computer Science",
+                "Civil Engineering",
+                "Biotechnology",
+                "Mathematics",
+                "Business Administration"
+            ],
+            "rankings": {
+                "national": 2,
+                "global": 185,
+                "research": 2
+            },
+            "facilities": [
+                "Research Centers",
+                "Central Library",
+                "Innovation Labs",
+                "Student Hostels",
+                "Athletic Facilities"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Indian Institute of Technology Kanpur",
+            "location": "Kanpur, Uttar Pradesh",
+            "founded": 1959,
+            "type": "Public",
+            "tuition": 200000,
+            "acceptance_rate": 0.7,
+            "enrollment": 10500,
+            "programs": [
+                "Aerospace Engineering",
+                "Chemical Engineering",
+                "Electrical Engineering",
+                "Environmental Science",
+                "Materials Science"
+            ],
+            "rankings": {
+                "national": 4,
+                "global": 254,
+                "research": 3
+            },
+            "facilities": [
+                "Research Labs",
+                "Sports Facilities",
+                "Innovation Lab",
+                "Student Hostels",
+                "Health Center"
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Indian Institute of Technology Madras",
+            "location": "Chennai, Tamil Nadu",
+            "founded": 1959,
+            "type": "Public",
+            "tuition": 200000,
+            "acceptance_rate": 0.6,
+            "enrollment": 9800,
+            "programs": [
+                "Aerospace Engineering",
+                "Electrical Engineering",
+                "Computer Science",
+                "Physics",
+                "Management Studies"
+            ],
+            "rankings": {
+                "national": 1,
+                "global": 250,
+                "research": 1
+            },
+            "facilities": [
+                "Research Park",
+                "Central Library",
+                "Innovation Hub",
+                "Sports Complex",
+                "Student Hostels"
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Indian Institute of Technology Kharagpur",
+            "location": "Kharagpur, West Bengal",
+            "founded": 1951,
+            "type": "Public",
+            "tuition": 200000,
+            "acceptance_rate": 0.7,
+            "enrollment": 12000,
+            "programs": [
+                "Computer Science",
+                "Mechanical Engineering",
+                "Aerospace Engineering",
+                "Agricultural and Food Engineering",
+                "Architecture"
+            ],
+            "rankings": {
+                "national": 6,
+                "global": 295,
+                "research": 4
+            },
+            "facilities": [
+                "Research Labs",
+                "Library",
+                "Student Hostels",
+                "Sports Complex",
+                "Innovation Park"
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Indian Institute of Technology Guwahati",
+            "location": "Guwahati, Assam",
+            "founded": 1994,
+            "type": "Public",
+            "tuition": 200000,
+            "acceptance_rate": 0.9,
+            "enrollment": 8500,
+            "programs": [
+                "Chemical Engineering",
+                "Civil Engineering",
+                "Electronics and Communication",
+                "Computer Science",
+                "Biotechnology"
+            ],
+            "rankings": {
+                "national": 7,
+                "global": 350,
+                "research": 6
+            },
+            "facilities": [
+                "Central Library",
+                "Research and Development Labs",
+                "Student Hostels",
+                "Sports Facilities",
+                "Innovation Center"
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Indian Institute of Technology Hyderabad",
+            "location": "Hyderabad, Telangana",
+            "founded": 2008,
+            "type": "Public",
+            "tuition": 200000,
+            "acceptance_rate": 1.1,
+            "enrollment": 6000,
+            "programs": [
+                "Artificial Intelligence",
+                "Computer Science",
+                "Electrical Engineering",
+                "Mechanical Engineering",
+                "Civil Engineering"
+            ],
+            "rankings": {
+                "national": 8,
+                "global": 400,
+                "research": 7
+            },
+            "facilities": [
+                "Research Labs",
+                "Library",
+                "Student Hostels",
+                "Innovation and Entrepreneurship Center",
+                "Sports Complex"
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Indian Institute of Technology Indore",
+            "location": "Indore, Madhya Pradesh",
+            "founded": 2009,
+            "type": "Public",
+            "tuition": 200000,
+            "acceptance_rate": 1.3,
+            "enrollment": 5000,
+            "programs": [
+                "Computer Science",
+                "Electrical Engineering",
+                "Civil Engineering",
+                "Physics",
+                "Chemistry"
+            ],
+            "rankings": {
+                "national": 13,
+                "global": 450,
+                "research": 10
+            },
+            "facilities": [
+                "Research Labs",
+                "Central Library",
+                "Student Hostels",
+                "Innovation Hub",
+                "Sports Facilities"
+            ]
+        },
+        {
+            "id": 9,
+            "name": "Indian Institute of Technology Mandi",
+            "location": "Mandi, Himachal Pradesh",
+            "founded": 2009,
+            "type": "Public",
+            "tuition": 200000,
+            "acceptance_rate": 1.5,
+            "enrollment": 4000,
+            "programs": [
+                "Computer Science",
+                "Mechanical Engineering",
+                "Civil Engineering",
+                "Electrical Engineering",
+                "Materials Science"
+            ],
+            "rankings": {
+                "national": 16,
+                "global": 510,
+                "research": 11
+            },
+            "facilities": [
+                "Research Labs",
+                "Library",
+                "Student Hostels",
+                "Innovation Center",
+                "Sports Facilities"
+            ]
+        },
+        {
+            "id": 10,
+            "name": "Indian Institute of Technology Jodhpur",
+            "location": "Jodhpur, Rajasthan",
+            "founded": 2008,
+            "type": "Public",
+            "tuition": 200000,
+            "acceptance_rate": 1.6,
+            "enrollment": 4200,
+            "programs": [
+                "Computer Science",
+                "Electrical Engineering",
+                "Mechanical Engineering",
+                "Physics",
+                "Chemistry"
+            ],
+            "rankings": {
+                "national": 17,
+                "global": 520,
+                "research": 13
+            },
+            "facilities": [
+                "Research and Development Labs",
+                "Central Library",
+                "Student Hostels",
+                "Sports Complex",
+                "Innovation Hub"
+            ]
+        },
+        {
+            "id": 11,
+            "name": "Indian Institute of Technology Bhubaneswar",
+            "location": "Bhubaneswar, Odisha",
+            "founded": 2008,
+            "type": "Public",
+            "tuition": 200000,
+            "acceptance_rate": 1.7,
+            "enrollment": 4000,
+            "programs": [
+                "Electrical Engineering",
+                "Mechanical Engineering",
+                "Civil Engineering",
+                "Computer Science",
+                "Earth Sciences"
+            ],
+            "rankings": {
+                "national": 18,
+                "global": 550,
+                "research": 15
+            },
+            "facilities": [
+                "Research Labs",
+                "Library",
+                "Student Hostels",
+                "Innovation Center",
+                "Sports Facilities"
+            ]
+        },
+        {
+            "id": 12,
+            "name": "Indian Institute of Technology Patna",
+            "location": "Patna, Bihar",
+            "founded": 2008,
+            "type": "Public",
+            "tuition": 200000,
+            "acceptance_rate": 1.4,
+            "enrollment": 4200,
+            "programs": [
+                "Computer Science",
+                "Civil Engineering",
+                "Mechanical Engineering",
+                "Chemical Engineering",
+                "Electrical Engineering"
+            ],
+            "rankings": {
+                "national": 19,
+                "global": 570,
+                "research": 16
+            },
+            "facilities": [
+                "Research and Development Labs",
+                "Central Library",
+                "Student Hostels",
+                "Sports Complex",
+                "Innovation and Entrepreneurship Center"
+            ]
+        },
+        {
+            "id": 13,
+            "name": "Indian Institute of Technology Patna",
+            "location": "Patna, Bihar",
+            "founded": 2008,
+            "type": "Public",
+            "tuition": 200000,
+            "acceptance_rate": 1.5,
+            "enrollment": 3500,
+            "programs": [
+                "Computer Science",
+                "Electrical Engineering",
+                "Mechanical Engineering",
+                "Civil Engineering"
+            ],
+            "rankings": {
+                "national": 10,
+                "global": 450,
+                "research": 16
+            },
+            "facilities": [
+                "Research Labs",
+                "Hostels",
+                "Sports Complex",
+                "Library",
+                "Entrepreneurship Center"
+            ]
+        },
+        {
+            "id": 14,
+            "name": "Indian Institute of Technology Indore",
+            "location": "Indore, Madhya Pradesh",
+            "founded": 2009,
+            "type": "Public",
+            "tuition": 210000,
+            "acceptance_rate": 1.6,
+            "enrollment": 3500,
+            "programs": [
+                "Computer Science",
+                "Electrical Engineering",
+                "Mechanical Engineering",
+                "Civil Engineering"
+            ],
+            "rankings": {
+                "national": 11,
+                "global": 460,
+                "research": 17
+            },
+            "facilities": [
+                "Central Library",
+                "Hostels",
+                "Research Labs",
+                "Sports Facilities",
+                "Innovation Hub"
+            ]
+        },
+        {
+            "id": 15,
+            "name": "Indian Institute of Technology Mandi",
+            "location": "Mandi, Himachal Pradesh",
+            "founded": 2009,
+            "type": "Public",
+            "tuition": 195000,
+            "acceptance_rate": 1.8,
+            "enrollment": 2000,
+            "programs": [
+                "Computer Science",
+                "Electrical Engineering",
+                "Mechanical Engineering"
+            ],
+            "rankings": {
+                "national": 12,
+                "global": 470,
+                "research": 18
+            },
+            "facilities": [
+                "Library",
+                "Sports Complex",
+                "Hostels",
+                "Research Labs",
+                "Entrepreneurship Center"
+            ]
+        },
+        {
+            "id": 16,
+            "name": "Indian Institute of Technology Ropar",
+            "location": "Ropar, Punjab",
+            "founded": 2008,
+            "type": "Public",
+            "tuition": 200000,
+            "acceptance_rate": 1.7,
+            "enrollment": 3200,
+            "programs": [
+                "Computer Science",
+                "Electrical Engineering",
+                "Mechanical Engineering",
+                "Civil Engineering"
+            ],
+            "rankings": {
+                "national": 9,
+                "global": 440,
+                "research": 15
+            },
+            "facilities": [
+                "Research Labs",
+                "Hostels",
+                "Sports Complex",
+                "Library",
+                "Innovation Center"
+            ]
+        },
+        {
+            "id": 17,
+            "name": "Indian Institute of Technology Gandhinagar",
+            "location": "Gandhinagar, Gujarat",
+            "founded": 2008,
+            "type": "Public",
+            "tuition": 210000,
+            "acceptance_rate": 1.5,
+            "enrollment": 3300,
+            "programs": [
+                "Computer Science",
+                "Electrical Engineering",
+                "Mechanical Engineering",
+                "Civil Engineering"
+            ],
+            "rankings": {
+                "national": 8,
+                "global": 420,
+                "research": 14
+            },
+            "facilities": [
+                "Research Labs",
+                "Sports Complex",
+                "Library",
+                "Innovation Center",
+                "Hostels"
+            ]
+        },
+        {
+            "id": 18,
+            "name": "National Institute of Technology Raipur",
+            "location": "Raipur, Chhattisgarh",
+            "founded": 1956,
+            "type": "Public",
+            "tuition": 125000,
+            "acceptance_rate": 3.5,
+            "enrollment": 4000,
+            "programs": [
+                "Computer Science",
+                "Mechanical Engineering",
+                "Civil Engineering",
+                "Electrical Engineering"
+            ],
+            "rankings": {
+                "national": 21,
+                "global": 600,
+                "research": 20
+            },
+            "facilities": [
+                "Research Labs",
+                "Library",
+                "Hostels",
+                "Sports Complex",
+                "Entrepreneurship Cell"
+            ]
+        },
+        {
+            "id": 19,
+            "name": "National Institute of Technology Tiruchirappalli",
+            "location": "Tiruchirappalli, Tamil Nadu",
+            "founded": 1964,
+            "type": "Public",
+            "tuition": 150000,
+            "acceptance_rate": 1.2,
+            "enrollment": 7500,
+            "programs": [
+                "Computer Science",
+                "Mechanical Engineering",
+                "Electrical Engineering",
+                "Architecture",
+                "Management Studies"
+            ],
+            "rankings": {
+                "national": 9,
+                "global": 501,
+                "research": 15
+            },
+            "facilities": [
+                "Library",
+                "Research Labs",
+                "Innovation Center",
+                "Student Hostels",
+                "Sports Facilities"
+            ]
+        },
+        {
+            "id": 20,
+            "name": "National Institute of Technology Warangal",
+            "location": "Warangal, Telangana",
+            "founded": 1959,
+            "type": "Public",
+            "tuition": 150000,
+            "acceptance_rate": 1.5,
+            "enrollment": 7000,
+            "programs": [
+                "Computer Science",
+                "Electrical Engineering",
+                "Civil Engineering",
+                "Mechanical Engineering",
+                "Physics"
+            ],
+            "rankings": {
+                "national": 12,
+                "global": 590,
+                "research": 17
+            },
+            "facilities": [
+                "Research Labs",
+                "Library",
+                "Innovation Center",
+                "Student Hostels",
+                "Sports Facilities"
+            ]
+        },
+        {
+            "id": 21,
+            "name": "National Institute of Technology Calicut",
+            "location": "Calicut, Kerala",
+            "founded": 1961,
+            "type": "Public",
+            "tuition": 125000,
+            "acceptance_rate": 1.5,
+            "enrollment": 7000,
+            "programs": [
+                "Computer Science",
+                "Mechanical Engineering",
+                "Electrical Engineering",
+                "Civil Engineering",
+                "Electronics and Communication"
+            ],
+            "rankings": {
+                "national": 15,
+                "global": 500,
+                "research": 18
+            },
+            "facilities": [
+                "Research Labs",
+                "Library",
+                "Hostels",
+                "Sports Complex",
+                "Innovation Hub"
+            ]
+        },
+        {
+            "id": 22,
+            "name": "National Institute of Technology Jaipur",
+            "location": "Jaipur, Rajasthan",
+            "founded": 1963,
+            "type": "Public",
+            "tuition": 130000,
+            "acceptance_rate": 1.6,
+            "enrollment": 6000,
+            "programs": [
+                "Computer Science",
+                "Electrical Engineering",
+                "Chemical Engineering",
+                "Mechanical Engineering",
+                "Architecture"
+            ],
+            "rankings": {
+                "national": 18,
+                "global": 550,
+                "research": 19
+            },
+            "facilities": [
+                "Central Library",
+                "Research and Development Labs",
+                "Hostels",
+                "Sports Facilities",
+                "Innovation and Entrepreneurship Center"
+            ]
+        },
+        {
+            "id": 23,
+            "name": "National Institute of Technology Karnataka",
+            "location": "Surathkal, Karnataka",
+            "founded": 1960,
+            "type": "Public",
+            "tuition": 150000,
+            "acceptance_rate": 1.5,
+            "enrollment": 8000,
+            "programs": [
+                "Computer Science",
+                "Civil Engineering",
+                "Metallurgical Engineering",
+                "Chemical Engineering",
+                "Physics"
+            ],
+            "rankings": {
+                "national": 10,
+                "global": 550,
+                "research": 14
+            },
+            "facilities": [
+                "Research Labs",
+                "Library",
+                "Innovation and Entrepreneurship Center",
+                "Student Hostels",
+                "Beachside Campus"
+            ]
+        },
+        {
+            "id": 24,
+            "name": "National Institute of Technology Rourkela",
+            "location": "Rourkela, Odisha",
+            "founded": 1961,
+            "type": "Public",
+            "tuition": 150000,
+            "acceptance_rate": 1.8,
+            "enrollment": 7200,
+            "programs": [
+                "Mechanical Engineering",
+                "Electrical Engineering",
+                "Computer Science",
+                "Metallurgical Engineering",
+                "Management Studies"
+            ],
+            "rankings": {
+                "national": 15,
+                "global": 600,
+                "research": 18
+            },
+            "facilities": [
+                "Central Library",
+                "Research Facilities",
+                "Student Hostels",
+                "Sports Center",
+                "Student Activity Center"
+            ]
+        },
+        {
+            "id": 25,
+            "name": "National Institute of Technology Hamirpur",
+            "location": "Hamirpur, Himachal Pradesh",
+            "founded": 1986,
+            "type": "Public",
+            "tuition": 120000,
+            "acceptance_rate": 3.8,
+            "enrollment": 3400,
+            "programs": [
+                "Computer Science",
+                "Electrical Engineering",
+                "Mechanical Engineering",
+                "Civil Engineering"
+            ],
+            "rankings": {
+                "national": 24,
+                "global": 630,
+                "research": 23
+            },
+            "facilities": [
+                "Research Labs",
+                "Library",
+                "Hostels",
+                "Sports Complex",
+                "Entrepreneurship Cell"
+            ]
+        },
+        {
+            "id": 26,
+            "name": "National Institute of Technology Nagpur",
+            "location": "Nagpur, Maharashtra",
+            "founded": 1960,
+            "type": "Public",
+            "tuition": 130000,
+            "acceptance_rate": 1.6,
+            "enrollment": 6000,
+            "programs": [
+                "Computer Science",
+                "Electrical Engineering",
+                "Civil Engineering",
+                "Mechanical Engineering",
+                "Chemical Engineering"
+            ],
+            "rankings": {
+                "national": 16,
+                "global": 520,
+                "research": 20
+            },
+            "facilities": [
+                "Research and Development Labs",
+                "Library",
+                "Student Hostels",
+                "Sports Facilities",
+                "Entrepreneurship Center"
+            ]
+        },
+        {
+            "id": 27,
+            "name": "National Institute of Technology Surathkal",
+            "location": "Surathkal, Karnataka",
+            "founded": 1960,
+            "type": "Public",
+            "tuition": 130000,
+            "acceptance_rate": 1.3,
+            "enrollment": 7500,
+            "programs": [
+                "Computer Science",
+                "Civil Engineering",
+                "Mechanical Engineering",
+                "Mining Engineering",
+                "Metallurgical and Materials Engineering"
+            ],
+            "rankings": {
+                "national": 10,
+                "global": 420,
+                "research": 13
+            },
+            "facilities": [
+                "Research and Development Labs",
+                "Library",
+                "Student Hostels",
+                "Sports Complex",
+                "Incubation Center"
+            ]
+        },
+        {
+            "id": 28,
+            "name": "National Institute of Technology Kurukshetra",
+            "location": "Kurukshetra, Haryana",
+            "founded": 1963,
+            "type": "Public",
+            "tuition": 135000,
+            "acceptance_rate": 3.2,
+            "enrollment": 3700,
+            "programs": [
+                "Computer Science",
+                "Electrical Engineering",
+                "Mechanical Engineering",
+                "Civil Engineering"
+            ],
+            "rankings": {
+                "national": 25,
+                "global": 640,
+                "research": 24
+            },
+            "facilities": [
+                "Research Labs",
+                "Library",
+                "Hostels",
+                "Sports Complex",
+                "Incubation Center"
+            ]
+        },
+        {
+            "id": 29,
+            "name": "National Institute of Technology Tiruchirappalli",
+            "location": "Tiruchirappalli, Tamil Nadu",
+            "founded": 1964,
+            "type": "Public",
+            "tuition": 135000,
+            "acceptance_rate": 1.4,
+            "enrollment": 8000,
+            "programs": [
+                "Computer Science",
+                "Electrical Engineering",
+                "Mechanical Engineering",
+                "Civil Engineering",
+                "Electronics and Communication"
+            ],
+            "rankings": {
+                "national": 12,
+                "global": 450,
+                "research": 15
+            },
+            "facilities": [
+                "Research Labs",
+                "Central Library",
+                "Student Hostels",
+                "Sports Complex",
+                "Incubation Center"
+            ]
+        },
+        {
+            "id": 30,
+            "name": "National Institute of Technology Rourkela",
+            "location": "Rourkela, Odisha",
+            "founded": 1961,
+            "type": "Public",
+            "tuition": 120000,
+            "acceptance_rate": 1.7,
+            "enrollment": 7000,
+            "programs": [
+                "Computer Science",
+                "Mechanical Engineering",
+                "Electrical Engineering",
+                "Civil Engineering",
+                "Chemical Engineering"
+            ],
+            "rankings": {
+                "national": 14,
+                "global": 500,
+                "research": 17
+            },
+            "facilities": [
+                "Research Labs",
+                "Library",
+                "Student Hostels",
+                "Sports Facilities",
+                "Innovation and Entrepreneurship Center"
+            ]
+        },
+        {
+            "id": 31,
+            "name": "National Institute of Technology Warangal",
+            "location": "Warangal, Telangana",
+            "founded": 1959,
+            "type": "Public",
+            "tuition": 125000,
+            "acceptance_rate": 1.2,
+            "enrollment": 7000,
+            "programs": [
+                "Chemical Engineering",
+                "Civil Engineering",
+                "Computer Science",
+                "Electrical Engineering",
+                "Mechanical Engineering"
+            ],
+            "rankings": {
+                "national": 11,
+                "global": 430,
+                "research": 14
+            },
+            "facilities": [
+                "Central Library",
+                "Research Labs",
+                "Hostels",
+                "Sports Complex",
+                "Innovation Hub"
+            ]
+        },
+        {
+            "id": 32,
+            "name": "National Institute of Technology Allahabad",
+            "location": "Allahabad, Uttar Pradesh",
+            "founded": 1961,
+            "type": "Public",
+            "tuition": 127000,
+            "acceptance_rate": 1.5,
+            "enrollment": 6000,
+            "programs": [
+                "Electronics and Communication",
+                "Computer Science",
+                "Mechanical Engineering",
+                "Electrical Engineering",
+                "Civil Engineering"
+            ],
+            "rankings": {
+                "national": 17,
+                "global": 540,
+                "research": 18
+            },
+            "facilities": [
+                "Central Library",
+                "Research Labs",
+                "Hostels",
+                "Sports Facilities",
+                "Incubation Center"
+            ]
+        },
+        {
+            "id": 33,
+            "name": "National Institute of Technology Durgapur",
+            "location": "Durgapur, West Bengal",
+            "founded": 1960,
+            "type": "Public",
+            "tuition": 120000,
+            "acceptance_rate": 1.7,
+            "enrollment": 6500,
+            "programs": [
+                "Computer Science",
+                "Electrical Engineering",
+                "Mechanical Engineering",
+                "Civil Engineering",
+                "Metallurgical Engineering"
+            ],
+            "rankings": {
+                "national": 20,
+                "global": 590,
+                "research": 21
+            },
+            "facilities": [
+                "Research Labs",
+                "Library",
+                "Student Hostels",
+                "Sports Complex",
+                "Innovation Hub"
+            ]
+        },
+        {
+            "id": 34,
+            "name": "National Institute of Technology Jamshedpur",
+            "location": "Jamshedpur, Jharkhand",
+            "founded": 1960,
+            "type": "Public",
+            "tuition": 125000,
+            "acceptance_rate": 1.8,
+            "enrollment": 5500,
+            "programs": [
+                "Computer Science",
+                "Electrical Engineering",
+                "Mechanical Engineering",
+                "Civil Engineering",
+                "Production Engineering"
+            ],
+            "rankings": {
+                "national": 21,
+                "global": 610,
+                "research": 22
+            },
+            "facilities": [
+                "Research Labs",
+                "Library",
+                "Student Hostels",
+                "Sports Facilities",
+                "Innovation Center"
+            ]
+        },
+        {
+            "id": 35,
+            "name": "National Institute of Technology Silchar",
+            "location": "Silchar, Assam",
+            "founded": 1967,
+            "type": "Public",
+            "tuition": 120000,
+            "acceptance_rate": 3.7,
+            "enrollment": 3500,
+            "programs": [
+                "Computer Science",
+                "Mechanical Engineering",
+                "Electrical Engineering",
+                "Civil Engineering"
+            ],
+            "rankings": {
+                "national": 22,
+                "global": 610,
+                "research": 21
+            },
+            "facilities": [
+                "Research Labs",
+                "Library",
+                "Hostels",
+                "Sports Complex",
+                "Incubation Center"
+            ]
+        },
+        {
+            "id": 36,
+            "name": "National Institute of Technology Patna",
+            "location": "Patna, Bihar",
+            "founded": 2004,
+            "type": "Public",
+            "tuition": 130000,
+            "acceptance_rate": 3.6,
+            "enrollment": 3000,
+            "programs": [
+                "Computer Science",
+                "Electrical Engineering",
+                "Mechanical Engineering",
+                "Civil Engineering"
+            ],
+            "rankings": {
+                "national": 23,
+                "global": 620,
+                "research": 22
+            },
+            "facilities": [
+                "Research Labs",
+                "Library",
+                "Sports Complex",
+                "Hostels",
+                "Innovation Hub"
+            ]
+        },
+        {
+            "id": 37,
+            "name": "Yale University",
+            "location": "New Haven, CT",
+            "founded": 1701,
+            "type": "Private",
+            "tuition": 57700,
+            "acceptance_rate": 6.1,
+            "enrollment": 13609,
+            "programs": [
+                "Law",
+                "Medicine",
+                "Arts",
+                "Drama",
+                "Environmental Studies"
+            ],
+            "rankings": {
+                "national": 4,
+                "global": 8,
+                "research": 5
+            },
+            "facilities": [
+                "Libraries",
+                "Museums",
+                "Theater",
+                "Research Centers",
+                "Sports Facilities"
+            ]
+        },
+        {
+            "id": 38,
+            "name": "UC Berkeley",
+            "location": "Berkeley, CA",
+            "founded": 1868,
+            "type": "Public",
+            "tuition": 44007,
+            "acceptance_rate": 16.3,
+            "enrollment": 42501,
+            "programs": [
+                "Engineering",
+                "Business",
+                "Chemistry",
+                "Economics",
+                "Computer Science"
+            ],
+            "rankings": {
+                "national": 22,
+                "global": 4,
+                "research": 3
+            },
+            "facilities": [
+                "Research Labs",
+                "Libraries",
+                "Innovation Hub",
+                "Sports Complex",
+                "Student Union"
+            ]
+        },
+        {
+            "id": 39,
+            "name": "Princeton University",
+            "location": "Princeton, NJ",
+            "founded": 1746,
+            "type": "Private",
+            "tuition": 56010,
+            "acceptance_rate": 5.8,
+            "enrollment": 8374,
+            "programs": [
+                "Engineering",
+                "Public Policy",
+                "Economics",
+                "Physics",
+                "Architecture"
+            ],
+            "rankings": {
+                "national": 1,
+                "global": 6,
+                "research": 4
+            },
+            "facilities": [
+                "Research Centers",
+                "Art Museum",
+                "Libraries",
+                "Performance Halls",
+                "Athletic Facilities"
+            ]
+        },
+        {
+            "id": 40,
+            "name": "Columbia University",
+            "location": "New York, NY",
+            "founded": 1754,
+            "type": "Private",
+            "tuition": 61850,
+            "acceptance_rate": 5.4,
+            "enrollment": 31455,
+            "programs": [
+                "Journalism",
+                "Business",
+                "Law",
+                "Arts",
+                "International Affairs"
+            ],
+            "rankings": {
+                "national": 3,
+                "global": 7,
+                "research": 6
+            },
+            "facilities": [
+                "Libraries",
+                "Research Centers",
+                "Media Labs",
+                "Sports Center",
+                "Student Center"
+            ]
+        },
+        {
+            "id": 41,
+            "name": "University of Chicago",
+            "location": "Chicago, IL",
+            "founded": 1890,
+            "type": "Private",
+            "tuition": 60552,
+            "acceptance_rate": 6.2,
+            "enrollment": 17452,
+            "programs": [
+                "Economics",
+                "Business",
+                "Law",
+                "Physics",
+                "Social Sciences"
+            ],
+            "rankings": {
+                "national": 6,
+                "global": 9,
+                "research": 7
+            },
+            "facilities": [
+                "Research Institutes",
+                "Libraries",
+                "Labs",
+                "Athletic Center",
+                "Student Housing"
+            ]
+        },
+        {
+            "id": 42,
+            "name": "California Institute of Technology",
+            "location": "Pasadena, CA",
+            "founded": 1891,
+            "type": "Private",
+            "tuition": 54600,
+            "acceptance_rate": 6.4,
+            "enrollment": 2237,
+            "programs": [
+                "Physics",
+                "Engineering",
+                "Chemistry",
+                "Biology",
+                "Mathematics"
+            ],
+            "rankings": {
+                "national": 9,
+                "global": 5,
+                "research": 8
+            },
+            "facilities": [
+                "Research Labs",
+                "Observatory",
+                "Seismology Lab",
+                "Computing Center",
+                "Library"
+            ]
+        },
+        {
+            "id": 43,
+            "name": "Johns Hopkins University",
+            "location": "Baltimore, MD",
+            "founded": 1876,
+            "type": "Private",
+            "tuition": 57010,
+            "acceptance_rate": 11.1,
+            "enrollment": 26402,
+            "programs": [
+                "Medicine",
+                "Public Health",
+                "Engineering",
+                "International Studies",
+                "Music"
+            ],
+            "rankings": {
+                "national": 7,
+                "global": 10,
+                "research": 9
+            },
+            "facilities": [
+                "Medical Centers",
+                "Research Labs",
+                "Libraries",
+                "Performance Halls",
+                "Athletic Facilities"
+            ]
+        },
+        {
+            "id": 44,
+            "name": "Harvard University",
+            "location": "Cambridge, MA",
+            "founded": 1636,
+            "type": "Private",
+            "tuition": 54768,
+            "acceptance_rate": 4.6,
+            "enrollment": 31120,
+            "programs": [
+                "Business",
+                "Law",
+                "Medicine",
+                "Engineering",
+                "Arts & Sciences"
+            ],
+            "rankings": {
+                "national": 2,
+                "global": 1,
+                "research": 1
+            },
+            "facilities": [
+                "Research Labs",
+                "Libraries",
+                "Sports Complex",
+                "Student Center",
+                "Health Services"
+            ]
+        },
+        {
+            "id": 45,
+            "name": "Stanford University",
+            "location": "Stanford, CA",
+            "founded": 1885,
+            "type": "Private",
+            "tuition": 56169,
+            "acceptance_rate": 4.3,
+            "enrollment": 17249,
+            "programs": [
+                "Computer Science",
+                "Engineering",
+                "Business",
+                "Medicine",
+                "Humanities"
+            ],
+            "rankings": {
+                "national": 3,
+                "global": 2,
+                "research": 2
+            },
+            "facilities": [
+                "Innovation Hub",
+                "Research Centers",
+                "Athletic Facilities",
+                "Arts Center",
+                "Medical Center"
+            ]
+        },
+        {
+            "id": 46,
+            "name": "MIT",
+            "location": "Cambridge, MA",
+            "founded": 1861,
+            "type": "Private",
+            "tuition": 55878,
+            "acceptance_rate": 7.3,
+            "enrollment": 11934,
+            "programs": [
+                "Engineering",
+                "Computer Science",
+                "Physics",
+                "Mathematics",
+                "Architecture"
+            ],
+            "rankings": {
+                "national": 1,
+                "global": 3,
+                "research": 1
+            },
+            "facilities": [
+                "Tech Labs",
+                "Innovation Center",
+                "Research Facilities",
+                "Media Lab",
+                "Nuclear Reactor"
+            ]
+        },
+        {
+            "id": 47,
+            "name": "Indian Institute of Information Technology Allahabad",
+            "location": "Allahabad, Uttar Pradesh",
+            "founded": 1999,
+            "type": "Public-Private Partnership",
+            "tuition": 175000,
+            "acceptance_rate": 2.0,
+            "enrollment": 2500,
+            "programs": [
+                "Computer Science",
+                "Information Technology",
+                "Electronics and Communication",
+                "Robotics and Artificial Intelligence"
+            ],
+            "rankings": {
+                "national": 20,
+                "global": 550,
+                "research": 17
+            },
+            "facilities": [
+                "Research Labs",
+                "Library",
+                "Hostels",
+                "Sports Complex",
+                "Innovation Hub"
+            ]
+        },
+        {
+            "id": 48,
+            "name": "Indian Institute of Information Technology Gwalior",
+            "location": "Gwalior, Madhya Pradesh",
+            "founded": 1997,
+            "type": "Public-Private Partnership",
+            "tuition": 160000,
+            "acceptance_rate": 2.5,
+            "enrollment": 2000,
+            "programs": [
+                "Computer Science",
+                "Information Technology",
+                "Integrated MBA in IT",
+                "Electronics and Communication"
+            ],
+            "rankings": {
+                "national": 22,
+                "global": 570,
+                "research": 19
+            },
+            "facilities": [
+                "Central Library",
+                "Hostels",
+                "Sports Facilities",
+                "Research Centers",
+                "Entrepreneurship Cell"
+            ]
+        },
+        {
+            "id": 49,
+            "name": "Indian Institute of Information Technology Jabalpur",
+            "location": "Jabalpur, Madhya Pradesh",
+            "founded": 2005,
+            "type": "Public-Private Partnership",
+            "tuition": 165000,
+            "acceptance_rate": 2.2,
+            "enrollment": 1800,
+            "programs": [
+                "Computer Science",
+                "Information Technology",
+                "Electronics and Communication",
+                "Mechanical Engineering"
+            ],
+            "rankings": {
+                "national": 23,
+                "global": 580,
+                "research": 20
+            },
+            "facilities": [
+                "Research Labs",
+                "Library",
+                "Student Hostels",
+                "Sports Complex",
+                "Innovation Hub"
+            ]
+        },
+        {
+            "id": 50,
+            "name": "Indian Institute of Information Technology Guwahati",
+            "location": "Guwahati, Assam",
+            "founded": 2013,
+            "type": "Public-Private Partnership",
+            "tuition": 170000,
+            "acceptance_rate": 2.8,
+            "enrollment": 1500,
+            "programs": [
+                "Computer Science",
+                "Electronics and Communication",
+                "Data Science and Artificial Intelligence"
+            ],
+            "rankings": {
+                "national": 25,
+                "global": 600,
+                "research": 21
+            },
+            "facilities": [
+                "Library",
+                "Hostels",
+                "Research Labs",
+                "Sports Complex",
+                "Entrepreneurship Cell"
+            ]
+        },
+        {
+            "id": 51,
+            "name": "Indian Institute of Information Technology Kota",
+            "location": "Kota, Rajasthan",
+            "founded": 2013,
+            "type": "Public-Private Partnership",
+            "tuition": 150000,
+            "acceptance_rate": 3.0,
+            "enrollment": 1400,
+            "programs": [
+                "Computer Science",
+                "Electronics and Communication",
+                "Artificial Intelligence and Machine Learning"
+            ],
+            "rankings": {
+                "national": 27,
+                "global": 620,
+                "research": 22
+            },
+            "facilities": [
+                "Research Labs",
+                "Library",
+                "Hostels",
+                "Innovation Center",
+                "Sports Facilities"
+            ]
+        },
+        {
+            "id": 52,
+            "name": "Indian Institute of Information Technology, Allahabad",
+            "location": "Allahabad, Uttar Pradesh",
+            "founded": 1999,
+            "type": "Public",
+            "tuition": 151500,
+            "acceptance_rate": 6.3,
+            "enrollment": 2000,
+            "programs": [
+                "Computer Science",
+                "Information Technology",
+                "Electronics and Communication"
+            ],
+            "rankings": {
+                "national": 87,
+                "global": 630,
+                "research": 28
+            },
+            "facilities": [
+                "Innovation Hub",
+                "Digital Library",
+                "Sports Complex",
+                "Hostels",
+                "Incubation Center"
+            ]
+        },
+        {
+            "id": 54,
+            "name": "Atal Bihari Vajpayee Indian Institute of Information Technology and Management, Gwalior",
+            "location": "Gwalior, Madhya Pradesh",
+            "founded": 1997,
+            "type": "Public",
+            "tuition": 125000,
+            "acceptance_rate": 7.1,
+            "enrollment": 1500,
+            "programs": [
+                "Computer Science",
+                "Information Technology",
+                "Management Studies"
+            ],
+            "rankings": {
+                "national": 88,
+                "global": 590,
+                "research": 20
+            },
+            "facilities": [
+                "Advanced Computing Labs",
+                "Library",
+                "Hostels",
+                "Sports Facilities",
+                "Incubation Center"
+            ]
+        },
+        {
+            "id": 55,
+            "name": "Indian Institute of Information Technology, Sri City",
+            "location": "Sri City, Andhra Pradesh",
+            "founded": 2013,
+            "type": "PPP (Public-Private Partnership)",
+            "tuition": 135000,
+            "acceptance_rate": 8.0,
+            "enrollment": 1200,
+            "programs": [
+                "Computer Science",
+                "Electronics and Communication"
+            ],
+            "rankings": {
+                "national": 110,
+                "global": 670,
+                "research": 32
+            },
+            "facilities": [
+                "Innovation Labs",
+                "Library",
+                "Hostels",
+                "Sports Complex"
+            ]
+        },
+        {
+            "id": 56,
+            "name": "Indian Institute of Information Technology, Vadodara",
+            "location": "Vadodara, Gujarat",
+            "founded": 2013,
+            "type": "PPP (Public-Private Partnership)",
+            "tuition": 140000,
+            "acceptance_rate": 8.5,
+            "enrollment": 1000,
+            "programs": [
+                "Computer Science",
+                "Information Technology"
+            ],
+            "rankings": {
+                "national": 120,
+                "global": 710,
+                "research": 36
+            },
+            "facilities": [
+                "Research Labs",
+                "Library",
+                "Hostels",
+                "Sports Complex"
+            ]
+        },
+    
+        {
+            "id": 57,
+            "name": "Indian Institute of Information Technology Vadodara",
+            "location": "Vadodara, Gujarat",
+            "founded": 2013,
+            "type": "Public-Private Partnership",
+            "tuition": 160000,
+            "acceptance_rate": 3.2,
+            "enrollment": 1200,
+            "programs": [
+                "Computer Science",
+                "Information Technology",
+                "Artificial Intelligence"
+            ],
+            "rankings": {
+                "national": 29,
+                "global": 630,
+                "research": 23
+            },
+            "facilities": [
+                "Research Labs",
+                "Central Library",
+                "Hostels",
+                "Innovation Center",
+                "Sports Complex"
+            ]
+        },
+        {
+            "id": 58,
+            "name": "Indian Institute of Information Technology Sri City",
+            "location": "Sri City, Andhra Pradesh",
+            "founded": 2013,
+            "type": "Public-Private Partnership",
+            "tuition": 170000,
+            "acceptance_rate": 2.9,
+            "enrollment": 1300,
+            "programs": [
+                "Computer Science",
+                "Electronics and Communication",
+                "Data Science"
+            ],
+            "rankings": {
+                "national": 28,
+                "global": 625,
+                "research": 24
+            },
+            "facilities": [
+                "Central Library",
+                "Research and Development Labs",
+                "Hostels",
+                "Entrepreneurship Cell",
+                "Sports Complex"
+            ]
+        },
+        {
+            "id": 59,
+            "name": "Indian Institute of Information Technology Kancheepuram",
+            "location": "Kancheepuram, Tamil Nadu",
+            "founded": 2007,
+            "type": "Public-Private Partnership",
+            "tuition": 160000,
+            "acceptance_rate": 2.3,
+            "enrollment": 1600,
+            "programs": [
+                "Computer Science",
+                "Mechanical Engineering",
+                "Electronics and Communication"
+            ],
+            "rankings": {
+                "national": 26,
+                "global": 610,
+                "research": 21
+            },
+            "facilities": [
+                "Research Labs",
+                "Library",
+                "Hostels",
+                "Innovation Center",
+                "Sports Complex"
+            ]
+        },
+        {
+            "id": 60,
+            "name": "Indian Institute of Information Technology Pune",
+            "location": "Pune, Maharashtra",
+            "founded": 2016,
+            "type": "Public-Private Partnership",
+            "tuition": 155000,
+            "acceptance_rate": 3.1,
+            "enrollment": 1000,
+            "programs": [
+                "Computer Science",
+                "Electronics and Communication",
+                "Artificial Intelligence and Data Science"
+            ],
+            "rankings": {
+                "national": 30,
+                "global": 640,
+                "research": 25
+            },
+            "facilities": [
+                "Central Library",
+                "Research Labs",
+                "Student Hostels",
+                "Sports Facilities",
+                "Innovation Hub"
+            ]
+        },
+        {
+            "id": 61,
+            "name": "Indian Institute of Information Technology Nagpur",
+            "location": "Nagpur, Maharashtra",
+            "founded": 2016,
+            "type": "Public-Private Partnership",
+            "tuition": 158000,
+            "acceptance_rate": 3.0,
+            "enrollment": 1100,
+            "programs": [
+                "Computer Science",
+                "Electronics and Communication",
+                "Machine Learning"
+            ],
+            "rankings": {
+                "national": 31,
+                "global": 650,
+                "research": 26
+            },
+            "facilities": [
+                "Research Labs",
+                "Library",
+                "Student Hostels",
+                "Sports Complex",
+                "Entrepreneurship Cell"
+            ]
+        },
+        {
+            "id": 62,
+            "name": "Indian Institute of Information Technology, Lucknow",
+            "location": "Lucknow, Uttar Pradesh",
+            "founded": 2015,
+            "type": "PPP (Public-Private Partnership)",
+            "tuition": 150000,
+            "acceptance_rate": 6.0,
+            "enrollment": 1300,
+            "programs": [
+                "Computer Science",
+                "Electronics and Communication"
+            ],
+            "rankings": {
+                "national": 96,
+                "global": 680,
+                "research": 30
+            },
+            "facilities": [
+                "Innovation Hub",
+                "Library",
+                "Hostels",
+                "Sports Facilities",
+                "Incubation Center"
+            ]
+        },
+        {
+            "id": 63,
+            "name": "International Institute of Information Technology, Hyderabad",
+            "location": "Hyderabad, Telangana",
+            "founded": 1998,
+            "type": "Public",
+            "tuition": 141000,
+            "acceptance_rate": 5.6,
+            "enrollment": 1800,
+            "programs": [
+                "Computer Science",
+                "Electronics and Communication",
+                "Computational Linguistics",
+                "Artificial Intelligence"
+            ],
+            "rankings": {
+                "national": 62,
+                "global": 520,
+                "research": 15
+            },
+            "facilities": [
+                "Research Labs",
+                "Library",
+                "Sports Complex",
+                "Hostels",
+                "Entrepreneurship Center"
+            ]
+        }
+    ]
+}

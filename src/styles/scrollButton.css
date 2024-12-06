@@ -1,0 +1,20 @@
+.scroll-btn svg {
+    color: white;
+    width: 20px;
+    height: 20px;
+}
+
+.scroll-btn:disabled {
+    background: rgba(139, 92, 246, 0.5);
+    cursor: not-allowed;
+}
+
+@keyframes pulse {
+    0% { transform: translateY(-50%) scale(1); }
+    50% { transform: translateY(-50%) scale(1.05); }
+    100% { transform: translateY(-50%) scale(1); }
+}
+
+.scroll-btn:not(:disabled):hover {
+    animation: pulse 1s infinite;
+}

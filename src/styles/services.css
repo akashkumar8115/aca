@@ -1,0 +1,77 @@
+.scroll-container {
+    position: relative;
+    padding: 0 3rem;
+}
+
+.services_data {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 2rem;
+    padding: 1rem 0 2rem 0;
+}
+
+.services_data button{
+    background-color: #8B5CF6;
+}
+
+.hide-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.service_card {
+    min-inline-size: 350px;
+    flex: 0 0 auto;
+}
+
+.scroll-btn {
+    position: absolute;
+    inset-block-start: 50%;
+    transform: translateY(-50%);
+    inline-size: 45px;
+    block-size: 45px;
+    border-radius: 50%;
+    /* color: white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.scroll-btn:hover {
+    transform: translateY(-50%) scale(1.1);
+}
+
+.scroll-btn.left {
+    inset-inline-start: 0;
+}
+
+.scroll-btn.right {
+    inset-inline-end: 0;
+}
+
+.service-card {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.career-card {
+    transition: transform 0.3s ease;
+}
+
+.career-card:hover {
+    transform: translateY(-5px);
+}

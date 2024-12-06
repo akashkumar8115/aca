@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-dots-pattern {
+    background-image: radial-gradient(circle, #e0e7ff 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+.scroll-hidden::-webkit-scrollbar {
+    display: none;
+}
+
+.gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-violet-600 to-indigo-600;
+}
+
+@layer components {
+    .btn-primary {
+        @apply px-6 py-3 bg-violet-600 text-white rounded-lg hover:bg-violet-700 transition-colors;
+    }
+    
+    .btn-secondary {
+        @apply px-6 py-3 border-2 border-violet-600 text-violet-600 rounded-lg hover:bg-violet-50 transition-colors;
+    }
+}
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.bg-dots-pattern {
+    background-image: radial-gradient(circle, #e0e7ff 1px, transparent 1px);
+    background-size: 20px 20px;
+}

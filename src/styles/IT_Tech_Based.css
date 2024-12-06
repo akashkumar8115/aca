@@ -1,0 +1,29 @@
+.hero-pattern {
+    background-image: url('/path-to-your-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #3B82F6 0%, #2563EB 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.floating-animation {
+    animation: float 6s ease-in-out infinite;
+}
