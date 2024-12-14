@@ -11,10 +11,11 @@ import { FaCalendar, FaUser, FaClock, FaTag } from 'react-icons/fa';
 const BlogFullArticle = () => {
     const { id } = useParams();
     const blog = blogData.find(blog => blog.id === parseInt(id));
-    const relatedPosts = blogData.filter(post => post.category === blog?.category && post.id !== blog?.id).slice(0, 3);
+    const relatedPosts = blogData.filter(post=>post.id!==blog?.id).slice(0, 3);
 
-    console.log(relatedPosts,blog);
-    
+    // console.log(blog);
+    // console.log(blogData);
+    // console.log(relatedPosts);
 
     if (!blog) return (
         <motion.div

@@ -1,6 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa';
+import {
+    FaTwitter, FaLinkedin, FaGithub, FaArrowRight, FaArrowLeft, FaInstagram, FaFacebook, FaLinkedinIn
+    , FaYoutube, FaPinterest, FaSnapchat, FaReddit, FaDiscord, FaWhatsapp, FaTelegram, FaSkype, FaGlobe, FaEnvelope
+} from 'react-icons/fa';
 import { useInView } from 'react-intersection-observer';
 
 const BlogAuthor = ({ author }) => {
@@ -102,6 +105,18 @@ const BlogAuthor = ({ author }) => {
                                         {link.name === 'Twitter' && <FaTwitter />}
                                         {link.name === 'LinkedIn' && <FaLinkedin />}
                                         {link.name === 'GitHub' && <FaGithub />}
+                                        {link.name === 'Website' && <FaGlobe />}
+                                        {link.name === 'Email' && <FaEnvelope />}
+                                        {link.name === 'Instagram' && <FaInstagram />}
+                                        {link.name === 'Facebook' && <FaFacebook />}
+                                        {link.name === 'YouTube' && <FaYoutube />}
+                                        {link.name === 'Pinterest' && <FaPinterest />}
+                                        {link.name === 'Snapchat' && <FaSnapchat />}
+                                        {link.name === 'Reddit' && <FaReddit />}
+                                        {link.name === 'Discord' && <FaDiscord />}
+                                        {link.name === 'Whatsapp' && <FaWhatsapp />}
+                                        {link.name === 'Telegram' && <FaTelegram />}
+                                        {link.name === 'Skype' && <FaSkype />}
                                     </motion.a>
                                 ))}
                             </div>
@@ -109,7 +124,7 @@ const BlogAuthor = ({ author }) => {
                     </div>
                 </motion.div>
             ))}
-            
+
             {/* Background animation elements */}
             <div className="absolute inset-0 bg-gradient-to-r from-blue-50 via-white to-purple-50 opacity-50" />
             <div className="absolute inset-0 bg-grid-pattern opacity-10" />

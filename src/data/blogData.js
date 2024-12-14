@@ -6,6 +6,7 @@ import Blog5 from '../assets/blog/blog-05.jpg';
 import Blog6 from '../assets/blog/blog-06.jpg';
 
 export const blogData = [
+    
     {
         id: 1,
         image: Blog1,

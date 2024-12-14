@@ -21,6 +21,7 @@ export const blogData = [
         featured: true,
         publishedAt: "2024-10-01T09:00:00Z",
         updatedAt: "2024-10-02T15:30:00Z",
+        category: "Artificial Intelligence",
         author: [
             {
                 name: "Dr. Rajesh Kumar",
@@ -33,11 +34,17 @@ export const blogData = [
                 socialLinks: [
                     { name: "Twitter", link: "https://twitter.com/rajeshkumar", followers: 25000 },
                     { name: "LinkedIn", link: "https://www.linkedin.com/in/rajeshkumar", connections: 15000 },
-                    { name: "GitHub", link: "https://github.com/rajeshkumar", repositories: 75 }
+                    { name: "GitHub", link: "https://github.com/rajeshkumar", repositories: 75 },
+                    { name: "YouTube", link: "https://youtube.com/rajeshkumar", subscribers: 12000 },
+                    { name: "Instagram", link: "https://instagram.com/rajeshkumar", followers: 18000 },
+                    { name: "Facebook", link: "https://facebook.com/rajeshkumar", followers: 20000 },
+                    { name: "Reddit", link: "https://reddit.com/user/rajeshkumar", karma: 1200 },
+                    { name: "Stack Overflow", link: "https://stackoverflow.com/users/rajeshkumar", reputation: 1500 },
+                    { name: "Quora", link: "https://quora.com/profile/rajeshkumar", followers: 10000 },
+                    { name: "Medium", link: "https://medium.com/@rajeshkumar", followers: 8000 },
                 ]
             }
         ],
-        category: "Artificial Intelligence",
         fullContent: [
             { type: "paragraph", paragraph: "The landscape of artificial intelligence has undergone remarkable transformations in 2024..." },
             { type: "quote", paragraph: "AI is not just about automation; it's about augmenting human capabilities..." },
@@ -87,6 +94,7 @@ export const blogData = [
         featured: false,
         publishedAt: "2024-10-05T09:00:00Z",
         updatedAt: "2024-10-06T10:45:00Z",
+        category: "Artificial Intelligence",
         author: [
             {
                 name: "Priya Sharma",
@@ -98,11 +106,17 @@ export const blogData = [
                 citations: 500,
                 socialLinks: [
                     { name: "Twitter", link: "https://twitter.com/priyasharma", followers: 12000 },
-                    { name: "LinkedIn", link: "https://www.linkedin.com/in/priyasharma", connections: 9000 }
+                    { name: "LinkedIn", link: "https://www.linkedin.com/in/priyasharma", connections: 9000 },
+                    { name: "GitHub", link: "https://github.com/priyasharma", repositories: 35 },
+                    { name: "YouTube", link: "https://youtube.com/priyasharma", subscribers: 8000 },
+                    { name: "Instagram", link: "https://instagram.com/priyasharma", followers: 15000 },
+                    { name: "Facebook", link: "https://facebook.com/priyasharma", followers: 18000 },
+                    { name: "Reddit", link: "https://reddit.com/user/priyasharma", karma: 800 },
+                    { name: "Stack Overflow", link: "https://stackoverflow.com/users/priyasharma", reputation: 1000 },
+                    { name: "Quora", link: "https://quora.com/profile/priyasharma", followers: 7000 },
                 ]
             }
         ],
-        category: "Artificial Intelligence",
         fullContent: [
             { type: "paragraph", paragraph: "The increasing adoption of AI technologies is reshaping the job market. While some fear job loss, many see opportunities for growth as businesses adapt to AI-driven workflows." },
             { type: "paragraph", paragraph: "AI-driven automation is taking over routine tasks, leading to job displacement in some areas. However, this shift also provides a chance to focus human effort on more creative and strategic work." },
@@ -152,8 +166,6 @@ export const blogData = [
             { type: "Video", title: "Navigating AI-Driven Workflows", link: "https://example.com/ai-workflows" }
         ]
     },
-
-
     {
         id: 3,
         image: Blog3,
@@ -170,6 +182,7 @@ export const blogData = [
         featured: false,
         publishedAt: "2024-10-10T09:00:00Z",
         updatedAt: "2024-10-11T14:00:00Z",
+        category: "Data Science",
         author: [
             {
                 name: "Neha Gupta",
@@ -181,11 +194,11 @@ export const blogData = [
                 citations: 600,
                 socialLinks: [
                     { name: "LinkedIn", link: "https://linkedin.com/in/nehagupta", connections: 7000 },
-                    { name: "GitHub", link: "https://github.com/nehagupta", repositories: 50 }
+                    { name: "GitHub", link: "https://github.com/nehagupta", repositories: 50 },
+                    { name: "Twitter", link: "https://twitter.com/nehagupta", followers: 2500 }
                 ]
             }
         ],
-        category: "Data Science",
         fullContent: [
             { type: "paragraph", paragraph: "Data science relies on a variety of tools that help analyze, visualize, and make predictions." },
             { type: "highlight", paragraph: "Python and R are foundational for data science, offering libraries for data analysis and machine learning." },
@@ -205,8 +218,10 @@ export const blogData = [
         resources: [
             { type: "PDF", title: "Top Data Science Tools in 2024", link: "https://example.com/data-tools.pdf" },
             { type: "Video", title: "Data Visualization Best Practices", link: "https://example.com/visualization-video" }
-        ]
+        ],
+        
     },
+
     {
         id: 4,
         image: Blog4,
@@ -223,6 +238,7 @@ export const blogData = [
         featured: false,
         publishedAt: "2024-10-15T09:00:00Z",
         updatedAt: "2024-10-16T13:00:00Z",
+        category: "Digital Transformation",
         author: [
             {
                 name: "Amit Patel",
@@ -234,11 +250,15 @@ export const blogData = [
                 citations: 300,
                 socialLinks: [
                     { name: "LinkedIn", link: "https://linkedin.com/in/amitpatel", connections: 8000 },
-                    { name: "Twitter", link: "https://twitter.com/amitpatel", followers: 5000 }
+                    { name: "Twitter", link: "https://twitter.com/amitpatel", followers: 5000 },
+                    { name: "GitHub", link: "https://github.com/amitpatel", repositories: 30 },
+                    { name: "YouTube", link: "https://youtube.com/amitpatel", subscribers: 1000 },
+                    { name: "Instagram", link: "https://instagram.com/amitpatel", followers: 3000 },
+                    { name: "Facebook", link: "https://facebook.com/amitpatel", followers: 2000 },
+                    { name: "Pinterest", link: "https://pinterest.com/amitpatel", followers: 1500 },
                 ]
             }
         ],
-        category: "Digital Transformation",
         fullContent: [
             { type: "paragraph", paragraph: "Small businesses can leverage digital tools to compete with larger corporations and streamline operations." },
             { type: "highlight", paragraph: "From CRMs to marketing automation, digital tools improve customer engagement and efficiency." },
@@ -375,8 +395,6 @@ export const blogData = [
             { type: "Video", title: "Understanding Edge Computing", link: "https://example.com/edge-computing-video" }
         ]
     },
-
-
     {
         id: 7,
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO5_j5_g94I1HbuT3XahzB3jTQQzvE3fijRQ&s",
@@ -466,7 +484,7 @@ export const blogData = [
                 ]
             },],
     },
-    
+
     {
         id: 8,
         image: "https://community.nasscom.in/sites/default/files/styles/960_x_600/public/media/images/0x0%20%281%29.jpg?itok=PEVCtsx2",
@@ -519,7 +537,7 @@ export const blogData = [
             { type: "PDF", title: "Full-Stack Development Guide", link: "https://example.com/full-stack-guide.pdf" },
             { type: "Video", title: "Full-Stack Development Tutorial", link: "https://example.com/full-stack-tutorial" }
         ]
-        
+
     },
     {
         id: 9,
@@ -531,6 +549,29 @@ export const blogData = [
         readTime: "6 min read",
         author: "Vikram Singh",
         category: "Digital Marketing",
+        estimatedReadTime: 6,
+        readingProgress: 0,
+        views: 1200,
+        shareCount: 500,
+        featured: true,
+        publishedAt: "2024-11-01T10:00:00Z",
+        updatedAt: "2024-11-01T14:00:00Z",
+        tags: ["AI", "Digital Marketing", "Marketing"],
+        author: [
+            {
+                name: "Vikram Singh",
+                bio: "Digital marketing expert with a passion for harnessing the power of AI in marketing campaigns.",
+                avatar: "https://example.com/avatar-vikram.png",
+                position: "Digital Marketing Specialist",
+                expertise: ["Digital Marketing", "AI Marketing", "Marketing Strategy"],
+                publications: 25,
+                citations: 700,
+                socialLinks: [
+                    { name: "LinkedIn", link: "https://linkedin.com/in/vikramsingh", connections: 7000 },
+                    { name: "Twitter", link: "https://twitter.com/vikramsingh", followers: 11000 }
+                ]
+            },
+        ],
         fullContent: [
             { paragraph: "AI tools are now a key component of successful digital marketing strategies. They empower marketers to deliver personalized experiences to customers." },
             { heading: "Personalized Marketing", paragraph: "AI enables personalized marketing by analyzing customer behavior and preferences, tailoring content to individual needs and enhancing user engagement." }
@@ -543,8 +584,15 @@ export const blogData = [
                 content: "AI is truly transforming marketing. Great read!",
                 likes: 14
             }
+        ],
+        relatedTopics: ["Artificial Intelligence", "Digital Marketing", "Customer Engagement"],
+        resources: [
+            { type: "PDF", title: "AI in Digital Marketing", link: "https://example.com/ai-digital-marketing.pdf" },
+            { type: "Video", title: "AI in Marketing", link: "https://example.com/ai-marketing-video" }
         ]
+
     },
+
     {
         id: 10,
         image: "https://fastercapital.co/i/The-Top-Startups-to-Watch-in--The-Top-Startups-to-Watch-in-2024.webp",
@@ -555,6 +603,30 @@ export const blogData = [
         readTime: "8 min read",
         author: "Amit Patel",
         category: "Telecommunications",
+        estimatedReadTime: 8,
+        readingProgress: 0,
+        views: 1500,
+        shareCount: 600,
+        featured: true,
+        publishedAt: "2024-11-05T10:00:00Z",
+        updatedAt: "2024-11-05T14:00:00Z",
+        tags: ["5G", "Telecommunications", "Connectivity"],
+        author: [
+            {
+                name: "Amit Patel",
+                bio: "Telecommunications expert with a focus on the future of telecommunications.",
+                avatar: "https://example.com/avatar-amit.png",
+                position: "Telecommunications Engineer",
+                expertise: ["5G Technology", "Telecommunications Infrastructure", "Network Optimization"],
+                publications: 30,
+                citations:
+                    800,
+                socialLinks: [
+                    { name: "LinkedIn", link: "https://linkedin.com/in/amitpatel", connections: 8000 },
+                    { name: "Twitter", link: "https://twitter.com/amitpatel", followers: 12000 }
+                ]
+            },
+        ],
         fullContent: [
             { paragraph: "The rollout of 5G is set to bring faster connectivity and better network reliability, enabling a host of new technologies and services." },
             { heading: "Advantages of 5G", paragraph: "Faster speeds, lower latency, and enhanced device connectivity are among the many benefits of 5G, paving the way for innovations like IoT and smart cities." }
@@ -567,14 +639,17 @@ export const blogData = [
                 content: "Excited to see how 5G changes our devices!",
                 likes: 19
             }
+        ],
+        relatedTopics: ["5G Technology", "Telecommunications", "Connectivity"],
+        resources: [
+            { type: "PDF", title: "5G Technology", link: "https://example.com/5g-technology.pdf" },
+            { type: "Video", title: "5G Infrastructure", link: "https://example.com/5g-infrastructure-video" }
         ]
+
     },
-
-
     {
         id: 11,
         image: "https://artificialpaintings.com/wp-content/uploads/2024/06/1732_IoT_in_the_Smart_Home_Future_Trends_and_Innovations.webp",
-
         tag: "Programming",
         date: "10 Nov, 2024",
         title: "Top 10 JavaScript Frameworks for 2024",
@@ -582,71 +657,150 @@ export const blogData = [
         readTime: "7 min read",
         author: "Dr. Sarah Johnson",
         category: "Web Development",
-        fullContent: `
-            <p>JavaScript frameworks streamline web development and offer powerful tools...</p>
-            <h2>Popular Frameworks</h2>
-            <p>React, Angular, and Vue.js remain popular choices in 2024...</p>
-          `,
+        estimatedReadTime: 7,
+        readingProgress: 0,
+        views: 1800,
+        shareCount: 700,
+        featured: true,
+        publishedAt: "2024-11-10T10:00:00Z",
+        updatedAt: "2024-11-10T14:00:00Z",
+        tags: ["JavaScript", "Web Development", "Frontend Development"],
+        author: [
+            {
+                name: "Dr. Sarah Johnson",
+                bio: "JavaScript expert with a focus on frontend development.",
+                avatar: "https://example.com/avatar-sarah.png",
+                position: "Frontend Engineer",
+                expertise: ["JavaScript", "Frontend Development", "UI/UX Design"],
+                publications: 35,
+                citations: 900,
+                socialLinks: [
+                    { name: "LinkedIn", link: "https://linkedin.com/in/sarahjohnson", connections: 9000 },
+                    { name: "Twitter", link: "https://twitter.com/sarahjohnson", followers: 15000 }
+                ]
+            }],
+        fullContent: [
+            { paragraph: "JavaScript is the backbone of modern web development, and the frameworks and libraries listed here are some of the most popular and widely used." },
+            { heading: "Top 10 JavaScript Frameworks", paragraph: "From React and Angular to Vue and Svelte, each has its own strengths and use cases." }
+        ],
+        relatedTopics: ["JavaScript", "Web Development", "Frontend Development"],
+        resources: [
+            { type: "PDF", title: "JavaScript Frameworks", link: "https://example.com/javascript-frameworks.pdf" },
+            {
+                type:
+                    "Video", title: "JavaScript Frameworks", link: "https://example.com/javascript-frameworks-video"
+            }
+        ],
         comments: [
             {
                 id: 11,
-                author: { name: "Chris Martin", avatar: "/avatars/chris.jpg" },
+                author: { name: "Emily Davis", avatar: "/avatars/emily.jpg" },
                 date: "5 days ago",
-                content: "React has been my go-to framework. Solid recommendations here.",
-                likes: 22
-            }
-        ]
-    },
-    {
-        id: 12,
-        image: "https://www.supplychainbrain.com/ext/resources/2024/02/06/HEALTHCARE-ARTIFICIAL-INTELLIGENCE-AI-iStock--FotografieLink--1517344698.jpg?t=1707282440&width=1080",
-
-        tag: "Design",
-        date: "15 Nov, 2024",
-        title: "User-Centered Design Principles for 2024",
-        description: "Discover key design principles that focus on user experience...",
-        readTime: "4 min read",
-        author: "Priya Sharma",
-        category: "UX Design",
-        fullContent: `
-            <p>Designing with the user in mind has become a staple for creating intuitive interfaces...</p>
-            <h2>Empathy in Design</h2>
-            <p>Understanding user needs and creating a seamless experience is vital...</p>
-          `,
-        comments: [
-            {
-                id: 12,
-                author: { name: "Maria Gonzales", avatar: "/avatars/maria.jpg" },
-                date: "3 days ago",
-                content: "Great article on focusing on user experience!",
+                content: "I'm a big fan of React!",
                 likes: 25
             }
-        ]
+        ],
     },
-    {
-        id: 13,
-        image: "https://media.licdn.com/dms/image/v2/D5612AQG1NSJkx7WYKQ/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1691662028934?e=1736985600&v=beta&t=KDDIKw3taUKCANzDrvv3XTan-vojL2lCGi-zUibIogE",
 
+    {
+        id: 12,
+        image: "https://media.licdn.com/dms/image/D4D03AQHJzYJrJ9QZjQ/article-cover_image-shrink_720_1280/0/1691662028934?e=1736985600&v=beta&t=KDDIKw3taUKCANzDrvv3XTan-vojL2lCGi-zUibIogE",
         tag: "Machine Learning",
-        date: "18 Nov, 2024",
+        date: "15 Nov, 2024",
         title: "Machine Learning in Predictive Analytics",
         description: "An overview of how machine learning is applied in predictive analytics...",
         readTime: "8 min read",
         author: "Neha Gupta",
         category: "Machine Learning",
-        fullContent: `
-            <p>Predictive analytics uses machine learning to forecast trends and outcomes...</p>
-            <h2>Applications of Predictive Analytics</h2>
-            <p>Used widely in finance, healthcare, and marketing for informed decisions...</p>
-          `,
+        estimatedReadTime: 8,
+        readingProgress: 0,
+        views: 1800,
+        shareCount: 700,
+        publishedAt: "2024-11-15T10:00:00Z",
+        updatedAt: "2024-11-15T14:00:00Z",
+        tags: ["Machine Learning", "Data Science", "Analytics"],
+        fullContent: [
+            { paragraph: "Machine learning is a powerful tool for predictive analytics, enabling organizations to make informed decisions based on data-driven insights." },
+            { heading: "Applications of Predictive Analytics", paragraph: "Used widely in finance, healthcare, and marketing for informed decisions and strategic planning." }
+        ],
+        author: [
+            {
+                name: "Neha Gupta",
+                bio: "Machine learning enthusiast with a focus on predictive analytics.",
+                avatar: "https://example.com/avatar-neha.png",
+                position: "Data Scientist",
+                expertise: ["Machine Learning", "Predictive Analytics", "Data Science"],
+                publications: 25,
+                citations: 700,
+                socialLinks: [
+                    { name: "LinkedIn", link: "https://linkedin.com/in/nehagupta", connections: 7000 },
+                    { name: "Twitter", link: "https://twitter.com/nehagupta", followers: 12000 }
+                ]
+            }],
+        relatedTopics: ["Machine Learning", "Data Science", "Analytics"],
+        resources: [
+            { type: "PDF", title: "Machine Learning in Predictive Analytics", link: "https://example.com/machine-learning-predictive-analytics.pdf" },
+            { type: "Video", title: "Machine Learning in Predictive Analytics", link: "https://example.com/machine-learning-predictive-analytics-video" }
+        ],
+        comments: [
+            {
+                id: 12,
+                author: { name: "Liam Turner", avatar: "/avatars/liam.jpg" },
+                date: "3 days ago",
+                content: "Great article!",
+                likes: 15
+            },
+        ]
+    },
+
+    {
+        id: 13,
+        image: "https://media.licdn.com/dms/image/D4D03AQHJzYJrJ9QZjQ/article-cover_image-shrink_720_1280/0/1691662028934?e=1736985600&v=beta&t=KDDIKw3taUKCANzDrvv3XTan-vojL2lCGi-zUibIogE",
+        tag: "Data Science",
+        date: "18 Nov, 2024",
+        title: "Data Science in Healthcare",
+        description: "An exploration of how data science is transforming healthcare...",
+        readTime: "9 min read",
+        category: "Data Science",
+        estimatedReadTime: 9,
+        readingProgress: 0,
+        views: 1500,
+        shareCount: 500,
+        publishedAt: "2024-11-18T10:00:00Z",
+        updatedAt: "2024-11-18T14:00:00Z",
+        tags: ["Data Science", "Healthcare", "Analytics"],
+        author: [
+            {
+                name: "Vikram Singh",
+                bio: "Data science enthusiast with a focus on healthcare analytics.",
+                avatar: "https://example.com/avatar-vikram.png",
+                position: "Data Scientist",
+                expertise: ["Data Science", "Healthcare Analytics", "Machine Learning"],
+                publications: 20,
+                citations: 500,
+                socialLinks: [
+                    { name: "LinkedIn", link: "https://linkedin.com/in/vikramsingh", connections: 5000 },
+                    { name: "Twitter", link: "https://twitter.com/vikramsingh", followers: 10000 }
+                ]
+            }],
+
+        fullContent: [
+            { paragraph: "Data science is transforming healthcare, enabling personalized care, early detection of diseases, and improved patient outcomes." },
+            { heading: "Applications of Data Science in Healthcare", paragraph: "Used to diagnose diseases, predict risk factors, and optimize treatment plans." }
+        ],
+        relatedTopics: ["Data Science", "Healthcare", "Analytics"],
+        resources: [
+            { type: "PDF", title: "Data Science in Healthcare", link: "https://example.com/data-science-healthcare.pdf" },
+            { type: "Video", title: "Data Science in Healthcare", link: "https://example.com/data-science-healthcare-video" }
+        ],
         comments: [
             {
                 id: 13,
-                author: { name: "Nina Patel", avatar: "/avatars/nina.jpg" },
+                author: { name: "Sophia Patel", avatar: "/avatars/sophia.jpg" },
                 date: "2 days ago",
-                content: "Very informative, especially for beginners!",
-                likes: 30
-            }
+                content: "Great article!",
+                likes: 12
+            },
         ]
     },
 

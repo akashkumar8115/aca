@@ -31,6 +31,7 @@ const BlogRelated = ({ posts }) => {
             }
         }
     };
+console.log(posts);
 
     return (
         <section className="py-12">

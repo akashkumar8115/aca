@@ -11,7 +11,7 @@ const VirtualCampus = () => {
                 animate={{ opacity: 1 }}
                 className="absolute top-10 left-10 z-10 text-white"
             >
-                <h2 className="text-4xl font-bold mb-4">Virtual Campus Tour</h2>
+                <h2 className="text-4xl font-bold mb-4 text-black">Virtual Campus Tour</h2>
                 <p className="text-xl">Explore our facilities in 3D</p>
             </motion.div>
 

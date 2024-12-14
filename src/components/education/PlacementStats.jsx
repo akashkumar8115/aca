@@ -28,10 +28,10 @@ ChartJS.register(
 
 const placementData = {
     overview: {
-        placementRate: 95,
+        placementRate: "90%",
         averageSalary: "12 LPA",
-        totalCompanies: 500,
-        internshipConversion: 78
+        totalCompanies: 300,
+        internshipConversion: 378
     },
     salaryDistribution: {
         labels: ['4-8 LPA', '8-12 LPA', '12-16 LPA', '16-20 LPA', '20+ LPA'],
@@ -78,7 +78,7 @@ const PlacementStats = () => {
                             <h3 className="text-gray-600 mb-2 capitalize">
                                 {key.replace(/([A-Z])/g, ' $1').trim()}
                             </h3>
-                            <p className="text-3xl font-bold text-violet-600">{value}%</p>
+                            <p className="text-3xl font-bold text-violet-600">{value}+</p>
                         </motion.div>
                     ))}
                 </div>

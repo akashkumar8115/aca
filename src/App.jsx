@@ -255,7 +255,7 @@ function App() {
           <Route path="/education/admission-process" element={<AdmissionProcess />} />
           <Route path="/education/entrance-exams" element={<EntranceExams />} />
           <Route path="/education/scholarships-financial-aid" element={<ScholarshipsFinancialAid />} />
-          <Route path="/education/placement-stats" element={<PlacementStats />} />
+          {/* <Route path="/education/placement-stats" element={<PlacementStats />} /> */}
 
 
           {/* Accommodation Routes */}

@@ -15,11 +15,20 @@ import SuccessStories from '../components/home/SuccessStories.jsx'
 import Mission from '../components/home/Mission'
 import Features from '../components/home/Features'
 import Founder from '../components/home/Founder'
-
+import Crousel from "../components/home/Crousel.jsx"
 const Home = () => {
+    // const slides = [
+    //     { imageSrc: Img01, title: "Slide 1", subtitle: "Subtitle 1" },
+    //     { imageSrc: Img02, title: "Slide 2", subtitle: "Subtitle 2" },
+    //     { imageSrc: Img03, title: "Slide 3", subtitle: "Subtitle 3" },
+    //     { imageSrc: Img04, title: "Slide 4", subtitle: "Subtitle 4" },
+    //     { imageSrc: Img05, title: "Slide 5", subtitle: "Subtitle 5" },
+    // ];
+
     return (
         <div className='bg-white'>
             <Banner />
+            {/* <Crousel slides={slides} /> */}
             <HeroSection />
             <Services />
             <Stats />
@@ -31,7 +40,7 @@ const Home = () => {
             {/* <Testimonials /> */}
             <UpcomingEvents />
             <FAQ />
-            <NewsletterSignup/>
+            <NewsletterSignup />
             {/* <ContactCTA /> */}
         </div>
     )
