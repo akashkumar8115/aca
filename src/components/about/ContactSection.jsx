@@ -11,13 +11,13 @@ const ContactSection = () => {
             <div className="flex justify-center gap-4">
                 <Link 
                     to="/contact-us" 
-                    className="bg-violet-50 text-white px-8 py-3 rounded-lg hover:bg-violet-100 transition-colors"
+                    className="bg-violet-500 text-white px-8 py-3 rounded-lg hover:bg-green-500 transition-colors"
                 >
                     Contact Us
                 </Link>
                 <Link 
                     to="/services" 
-                    className="border-2 border-violet-50 text-violet-50 px-8 py-3 rounded-lg hover:bg-violet-50 hover:text-white transition-colors"
+                    className="border-2 border-violet-500 text-violet-500 px-8 py-3 rounded-lg hover:bg-violet-500 hover:text-white transition-colors"
                 >
                     Our Services
                 </Link>

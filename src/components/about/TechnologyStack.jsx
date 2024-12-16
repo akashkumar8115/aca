@@ -26,7 +26,7 @@ const TechnologyStack = () => {
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {technologies.map((tech, index) => (
                     <div key={index} className="bg-white p-6 rounded-xl shadow-lg">
-                        <h3 className="text-lg font-semibold mb-4 text-violet-50">{tech.category}</h3>
+                        <h3 className="text-lg font-semibold mb-4 text-violet-500">{tech.category}</h3>
                         <div className="flex flex-wrap gap-2">
                             {tech.tools.map((tool, idx) => (
                                 <span 

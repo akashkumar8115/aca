@@ -1,39 +1,55 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link, useNavigate } from 'react-router-dom';
+import { useAuth } from '../../context/AuthContext';
 import axios from 'axios';
 
 const Register = () => {
     const navigate = useNavigate();
+    const { register, loading } = useAuth();
     const [formData, setFormData] = useState({
         name: '',
         email: '',
         password: '',
         confirmPassword: ''
     });
-    const [loading, setLoading] = useState(false);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         if (formData.password !== formData.confirmPassword) {
-            alert("Passwords don't match");
+            toast.error("Passwords don't match");
             return;
         }
-        setLoading(true);
-        try {
-            const response = await axios.post('http://localhost:5000/api/auth/register', formData);
-            localStorage.setItem('token', response.data.token);
-            localStorage.setItem('user', JSON.stringify(response.data.user));
-            navigate('/profile');
-        } catch (error) {
-            console.error('Registration failed:', error.response?.data?.message);
-        } finally {
-            setLoading(false);
+        const success = await register(formData);
+        if (success) {
+            navigate('dashboard');
         }
     };
 
+    // const [loading, setLoading] = useState(false);
+
+    // const handleSubmit = async (e) => {
+    //     e.preventDefault();
+    //     if (formData.password !== formData.confirmPassword) {
+    //         alert("Passwords don't match");
+    //         return;
+    //     }
+    //     setLoading(true);
+    //     try {
+    //         const response = await axios.post('http://localhost:5000/api/auth/register', formData);
+    //         localStorage.setItem('token', response.data.token);
+    //         localStorage.setItem('user', JSON.stringify(response.data.user));
+    //         navigate('/profile');
+    //     } catch (error) {
+    //         console.error('Registration failed:', error.response?.data?.message);
+    //     } finally {
+    //         setLoading(false);
+    //     }
+    //     setFormData({ name: '', email: '', password: '', confirmPassword: '' });
+    // };
+
     return (
-        <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white pt-32">
+        <div className="bg-gradient-to-br from-blue-50 to-white pt-24">
             <div className="container mx-auto px-2 py-10">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}

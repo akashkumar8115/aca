@@ -36,7 +36,7 @@ const TeamGallery = () => {
                     <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden">
                         <div className="p-6">
                             <h3 className="text-xl font-semibold mb-2">{member.name}</h3>
-                            <p className="text-violet-50 font-medium mb-3">{member.role}</p>
+                            <p className="text-violet-500 font-medium mb-3">{member.role}</p>
                             <p className="text-sm text-black-600 mb-4">{member.education}</p>
                             <div className="flex flex-wrap gap-2">
                                 {member.expertise.map((skill, idx) => (

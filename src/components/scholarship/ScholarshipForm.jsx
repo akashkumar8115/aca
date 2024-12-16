@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaUserGraduate, FaBook, FaFileAlt, FaAddressCard } from 'react-icons/fa';
+import axios from 'axios';
+import { toast } from 'react-toastify';
 // import "../../styles/scholarship.css";
 const ScholarshipForm = () => {
     const [step, setStep] = useState(1);
+    const [loading, setLoading] = useState(false);
     const [formData, setFormData] = useState({
         // Personal Information
         firstName: '',
@@ -54,18 +57,143 @@ const ScholarshipForm = () => {
     const handlePrev = () => {
         setStep(step - 1);
     };
-    const handleSubmit = (e) => {
+
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        // You can handle form submission here
-        if (!formData) {
-            // Handle form submission for step 4
-            console.log('Form submitted:', formData,'Not Accepted');
+
+        // if (!validateForm()) {
+        //     toast.error("Please fill in all required fields correctly.");
+        //     return;
+        // }
+
+        setLoading(true);
+
+        console.log("Form Data:", formData);
+        try {
+            
+            // Prepare formData for submission
+            const formDataToSend = new FormData();
+            Object.keys(formData).forEach((key) => {
+                if (formData[key] instanceof File || formData[key] instanceof Blob) {
+                    formDataToSend.append(key, formData[key]);
+                } else {
+                    formDataToSend.append(key, formData[key]);
+                }
+            });
+
+            // Post request to the API
+            const response = await axios.post(
+                'http://localhost:5000/api/scholarships',
+                formDataToSend,
+                {
+                    headers: {
+                        'Content-Type': 'multipart/form-data',
+                        // 'Authorization': `Bearer ${localStorage.getItem('token')}`, // Optional: Include a token if authentication is required
+                    },
+                }
+            );
+            response()
+            // Success response
+            toast.success("Scholarship application submitted successfully!");
+
+            // Reset form data safely
+            setFormData({
+                firstName: '',
+                lastName: '',
+                email: '',
+                phone: '',
+                dob: '',
+                gender: '',
+                category: '',
+                address: '',
+                city: '',
+                state: '',
+                pincode: '',
+                currentLevel: '',
+                institution: '',
+                board: '',
+                previousMarks: '',
+                currentCG: '',
+                stream: '',
+                achievements: '',
+                photo: null,
+                academicRecords: null,
+                incomeProof: null,
+                recommendationLetter: null,
+                extracurricular: '',
+                whyDeserving: '',
+                futureGoals: '',
+                familyIncome: '',
+                step: 1,
+            });
+            setStep(1);
+
+        } catch (error) {
+            // Handle errors
+            toast.error(error.response?.data?.message || "Error submitting the application.");
+            console.error("Error during submission:", error);
+        } finally {
+            setLoading(false);
         }
-       // Reset form data for the next step
-        // console.log(formData);
-        document.write('Form is Not Working Please Try Again Later');
-        console.log('Form submitted:', formData);
     };
+
+
+    const validateForm = () => {
+        // Define required fields
+        const requiredFields = [
+            'firstName', 'lastName', 'email', 'phone', 'currentLevel',
+            'institution', 'board', 'previousMarks', 'currentCG', 'stream',
+            'photo', 'academicRecords', 'incomeProof', 'extracurricular',
+            'whyDeserving', 'futureGoals', 'familyIncome',
+        ];
+
+        // Validate each field
+        for (const field of requiredFields) {
+            if (!formData[field] || formData[field].toString().trim() === '') {
+                // Show a user-friendly field name in the error message
+                const fieldLabel = field
+                    .replace(/([A-Z])/g, ' $1') // Add spaces before capital letters
+                    .replace(/^./, (str) => str.toUpperCase()); // Capitalize the first letter
+                toast.error(`${fieldLabel} is required.`);
+                return false;
+            }
+        }
+
+        // Validate email format
+        if (!/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/.test(formData.email)) {
+            toast.error('Please enter a valid email address.');
+            return false;
+        }
+
+        // Validate phone number (basic validation for 10 digits)
+        if (!/^\d{10}$/.test(formData.phone)) {
+            toast.error('Please enter a valid 10-digit phone number.');
+            return false;
+        }
+
+        // Additional numeric validations (e.g., previous marks and CG)
+        if (isNaN(formData.previousMarks) || formData.previousMarks < 0 || formData.previousMarks > 100) {
+            toast.error('Previous marks must be a valid percentage between 0 and 100.');
+            return false;
+        }
+        if (isNaN(formData.currentCG) || formData.currentCG < 0 || formData.currentCG > 10) {
+            toast.error('Current CG must be a valid GPA between 0 and 10.');
+            return false;
+        }
+
+        // Ensure file fields are valid
+        const fileFields = ['photo', 'academicRecords', 'incomeProof'];
+        for (const field of fileFields) {
+            if (!(formData[field] instanceof File)) {
+                toast.error(`${field.charAt(0).toUpperCase() + field.slice(1)} must be a valid file.`);
+                return false;
+            }
+        }
+
+        return true; // Form is valid
+    };
+
+
     const renderStep = () => {
         switch (step) {
             case 1:
@@ -307,10 +435,11 @@ const ScholarshipForm = () => {
 
     return (
         <section className="py-16 px-4">
-
             <div className="max-w-3xl mx-auto">
                 <div className="bg-white rounded-lg shadow-lg p-8">
-                    <h2 className="text-3xl font-bold text-center mb-8">Scholarship Application</h2>
+                    <h2 className="text-3xl font-bold text-center mb-8">
+                        Scholarship Application
+                    </h2>
 
                     {/* Progress Bar */}
                     <div className="mb-8">
@@ -318,7 +447,9 @@ const ScholarshipForm = () => {
                             {[1, 2, 3, 4].map((stepNumber) => (
                                 <motion.div
                                     key={stepNumber}
-                                    className={`w-8 h-8 rounded-full flex items-center justify-center ${step >= stepNumber ? 'bg-violet-50 text-white' : 'bg-gray-200'
+                                    className={`w-10 h-10 flex items-center justify-center rounded-full text-lg font-semibold ${step >= stepNumber
+                                            ? 'bg-violet-500 text-white'
+                                            : 'bg-gray-300 text-gray-700'
                                         }`}
                                     whileHover={{ scale: 1.1 }}
                                 >
@@ -326,11 +457,12 @@ const ScholarshipForm = () => {
                                 </motion.div>
                             ))}
                         </div>
-                        <div className="h-2 bg-gray-200 rounded-full">
+                        <div className="h-2 bg-gray-300 rounded-full overflow-hidden">
                             <motion.div
-                                className="h-full bg-violet-50 rounded-full"
+                                className="h-full bg-violet-500 rounded-full"
                                 initial={{ width: '0%' }}
                                 animate={{ width: `${(step / 4) * 100}%` }}
+                                transition={{ duration: 0.5 }}
                             />
                         </div>
                     </div>
@@ -340,40 +472,45 @@ const ScholarshipForm = () => {
                         {renderStep()}
 
                         {/* Navigation Buttons */}
-                        <div className="flex justify-between mt-8">
+                        <div className="flex justify-between items-center mt-8">
                             {step > 1 && (
                                 <button
                                     type="button"
                                     onClick={() => setStep(step - 1)}
-                                    className="px-6 py-2 bg-green-200 text-black border-black-300 rounded-lg hover:bg-green-300 hover:text-black transition-colors duration-200"
+                                    className="px-6 py-2 bg-gray-200 text-gray-800 rounded-lg border border-gray-300 hover:bg-gray-300 hover:text-gray-900 transition-colors duration-200"
+                                    disabled={loading}
                                 >
                                     Previous
                                 </button>
-
                             )}
+
                             {step < 4 ? (
                                 <button
                                     type="button"
                                     onClick={() => setStep(step + 1)}
-                                    className="px-6 py-2 bg-violet-50 text-white rounded-lg hover:bg-violet-600"
-
+                                    className="px-6 py-2 bg-violet-500 text-white rounded-lg hover:bg-violet-600 transition-all"
+                                    disabled={loading}
                                 >
                                     Next
                                 </button>
                             ) : (
                                 <button
                                     type="submit"
-                                    className="px-6 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600"
+                                    className={`px-6 py-2 rounded-lg transition-all ${loading
+                                            ? 'bg-green-400 cursor-not-allowed'
+                                            : 'bg-green-500 hover:bg-green-600 text-white'
+                                        }`}
+                                    disabled={loading}
                                 >
-                                    Submit Application
+                                    {loading ? 'Submitting...' : 'Submit Application'}
                                 </button>
                             )}
                         </div>
                     </form>
                 </div>
             </div>
-
         </section>
+
     );
 };
 

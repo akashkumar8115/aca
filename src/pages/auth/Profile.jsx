@@ -1,11 +1,58 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { useAuth } from '../../context/AuthContext';
+import { toast } from 'react-toastify';
 import axios from 'axios';
 
 const Profile = () => {
-    const [user, setUser] = useState(null);
+    const navigate = useNavigate();
+    const { user, logout } = useAuth();
+    const [profileData, setProfileData] = useState(null);
     const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        const fetchProfile = async () => {
+            try {
+                const token = localStorage.getItem('token');
+                const { data } = await axios.get('http://localhost:5000/api/user/profile', {
+                    headers: { Authorization: `Bearer ${token}` }
+                });
+                setProfileData(data);
+            } catch (error) {
+                if (error.response?.status === 401) {
+                    toast.error('Session expired. Please login again.');
+                    logout();
+                    navigate('/login');
+                } else {
+                    toast.error('Failed to fetch profile data');
+                }
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        if (user) {
+            fetchProfile();
+        } else {
+            navigate('/login');
+        }
+    }, [user, navigate, logout]);
+
+    // if (loading) {
+    //     return (
+    //         <div className="min-h-screen flex items-center justify-center">
+    //             <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500">hjvjghvb</div>
+    //         </div>
+    //     );
+    // }
+
+    // if (!profileData) {
+    //     return null;
+    // }
+
+
+
 
     useEffect(() => {
         const fetchProfile = async () => {
@@ -14,9 +61,9 @@ const Profile = () => {
                 const response = await axios.get('http://localhost:5000/api/user/profile', {
                     headers: { Authorization: `Bearer ${token}` }
                 });
-                setUser(response.data);
+                setProfileData(response.data);
             } catch (error) {
-                console.error('Error fetching profile:', error);
+                toast.error('Failed to fetch profile data');
             } finally {
                 setLoading(false);
             }
@@ -25,7 +72,11 @@ const Profile = () => {
         fetchProfile();
     }, []);
 
-    if (loading) return <div>Loading...</div>;
+    if (loading) {
+        return <div className="min-h-screen flex items-center justify-center">
+            <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-green-500"></div>
+        </div>;
+    }
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white pt-32">
@@ -33,46 +84,65 @@ const Profile = () => {
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
-                    className="max-w-2xl mx-auto bg-white rounded-xl shadow-lg p-8"
+                    className="max-w-4xl mx-auto bg-white rounded-xl shadow-lg p-8"
                 >
                     <div className="text-center mb-8">
-                        <div className="w-32 h-32 mx-auto bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                            <span className="text-4xl text-blue-600">{user?.name?.charAt(0)}</span>
+                        <div className="relative w-32 h-32 mx-auto">
+                            <img
+                                src={profileData?.profileImage || 'https://attic.sh/8lfum8f9b0qplpe5jtj7m1kdcrrn'}
+                                alt={profileData?.name}
+                                className="rounded-full w-full h-full object-cover border-4 border-green-500"
+                            />
                         </div>
-                        <h1 className="text-3xl font-bold text-gray-800">{user?.name}</h1>
-                        <p className="text-gray-600">{user?.email}</p>
+                        <h1 className="text-3xl font-bold text-gray-800 mt-4">{profileData?.name}</h1>
+                        <p className="text-gray-600">{profileData?.email}</p>
                     </div>
 
-                    <div className="space-y-6">
-                        <div className="border-t border-gray-200 pt-6">
-                            <h2 className="text-xl font-semibold mb-4">Profile Information</h2>
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                <div>
-                                    <label className="block text-gray-600 mb-1">Full Name</label>
-                                    <p className="font-medium">{user?.name}</p>
-                                </div>
-                                <div>
-                                    <label className="block text-gray-600 mb-1">Email</label>
-                                    <p className="font-medium">{user?.email}</p>
-                                </div>
-                                {/* Add more profile fields as needed */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div className="space-y-4">
+                            <div>
+                                <h3 className="text-lg font-semibold text-gray-700">Contact Information</h3>
+                                <p className="text-gray-600">Phone: {profileData?.phone || 'Not provided'}</p>
+                                <p className="text-gray-600">Location: {profileData?.location || 'Not provided'}</p>
+                            </div>
+
+                            <div>
+                                <h3 className="text-lg font-semibold text-gray-700">Bio</h3>
+                                <p className="text-gray-600">{profileData?.bio || 'No bio provided'}</p>
                             </div>
                         </div>
 
-                        <div className="flex justify-center space-x-4">
-                            <Link
-                                to="/update-profile"
-                                className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-300"
-                            >
-                                Edit Profile
-                            </Link>
-                            <Link
-                                to="/change-password"
-                                className="px-6 py-2 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition-colors duration-300"
-                            >
-                                Change Password
-                            </Link>
+                        <div className="space-y-4">
+                            <div>
+                                <h3 className="text-lg font-semibold text-gray-700">Education</h3>
+                                {profileData?.education?.map((edu, index) => (
+                                    <div key={index} className="mb-2">
+                                        <p className="font-medium">{edu.degree} in {edu.field}</p>
+                                        <p className="text-gray-600">{edu.institution} - {edu.year}</p>
+                                    </div>
+                                ))}
+                            </div>
+
+                            <div>
+                                <h3 className="text-lg font-semibold text-gray-700">Skills</h3>
+                                <div className="flex flex-wrap gap-2">
+                                    {profileData?.skills?.map((skill, index) => (
+                                        <span key={index} className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">
+                                            {skill}
+                                        </span>
+                                    ))}
+                                </div>
+                            </div>
                         </div>
+                    </div>
+
+                    <div className="mt-8 flex justify-center space-x-4">
+                        <Link
+                            to="/update-profile"
+                            className="px-6 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors duration-300"
+                        >
+                            Edit Profile
+                        </Link>
                     </div>
                 </motion.div>
             </div>

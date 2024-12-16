@@ -32,7 +32,7 @@ const stats = [
 
 const ServiceStats = () => {
     return (
-        <section className="py-16 bg-gradient-to-r from-violet-50 to-violet-100">
+        <section className="py-16 bg-gradient-to-r from-violet-500 to-violet-100">
             <div className="max-w-6xl mx-auto px-4">
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
                     {stats.map((stat, index) => (

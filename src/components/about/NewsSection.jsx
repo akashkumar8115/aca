@@ -25,7 +25,7 @@ const NewsSection = () => {
             <div className="grid md:grid-cols-3 gap-6">
                 {news.map((item, index) => (
                     <div key={index} className="bg-white p-6 rounded-xl shadow-lg">
-                        <p className="text-sm text-violet-50 mb-2">{item.date}</p>
+                        <p className="text-sm text-violet-500 mb-2">{item.date}</p>
                         <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
                         <p className="text-black-600">{item.description}</p>
                     </div>

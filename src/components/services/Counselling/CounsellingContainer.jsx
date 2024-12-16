@@ -12,16 +12,9 @@ const CounsellingContainer = () => {
         {/* --------- college counselling ------- */}
 
         <div >
-
-
           <CollegeCounselling />
-
         </div>
-
         {/* ---------- career counselling ----------- */}
-
-
-
       </div>
 
     </section>

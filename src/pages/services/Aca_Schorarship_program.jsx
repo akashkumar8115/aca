@@ -53,7 +53,7 @@ const Aca_Schorarship_program = () => {
                     <motion.button onClick={scrollToForm}
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        className="bg-violet-50 text-white px-8 py-3 rounded-lg font-semibold text-lg shadow-lg hover:bg-violet-600 transition-colors"
+                        className="bg-violet-500 text-white px-8 py-3 rounded-lg font-semibold text-lg shadow-lg hover:bg-violet-600 transition-colors"
                     >
                         <a target="_blank" href="https://docs.google.com/forms/u/1/d/e/1FAIpQLScRowEYAyY4wAxlHndXYBndh4i57FHDtP7sesz5Ho5_KM2PTQ/formResponse?edit2=2_ABaOnufwCfxhyl1v7aK5dm57MWyxdWJUB5AMkauJRyqwpzPsDEa51x-LfgVPJACHjQ">
                             Apply Now
@@ -74,7 +74,7 @@ const Aca_Schorarship_program = () => {
                                 transition={{ delay: index * 0.1 }}
                                 className="bg-white p-6 rounded-xl shadow-lg text-center"
                             >
-                                <div className="text-violet-50 text-3xl mb-4 flex justify-center">
+                                <div className="text-violet-500 text-3xl mb-4 flex justify-center">
                                     {stat.icon}
                                 </div>
                                 <h3 className="text-2xl font-bold text-black-800 mb-2">{stat.number}</h3>
@@ -104,7 +104,7 @@ const Aca_Schorarship_program = () => {
                     <motion.button
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        className="bg-violet-50 text-white px-8 py-3 rounded-lg font-semibold text-lg shadow-lg hover:bg-violet-600 transition-colors"
+                        className="bg-violet-500 text-white px-8 py-3 rounded-lg font-semibold text-lg shadow-lg hover:bg-violet-600 transition-colors"
                     >
                         Begin Application
                     </motion.button>

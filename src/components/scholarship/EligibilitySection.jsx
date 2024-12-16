@@ -44,7 +44,7 @@ const EligibilitySection = () => {
                             className="bg-white p-6 rounded-lg shadow-lg"
                         >
                             <div className="flex items-center mb-4">
-                                <FaUserGraduate className="text-2xl text-violet-50 mr-2" />
+                                <FaUserGraduate className="text-2xl text-violet-500 mr-2" />
                                 <h3 className="text-xl font-bold">{item.category}</h3>
                             </div>
                             <ul className="space-y-3">

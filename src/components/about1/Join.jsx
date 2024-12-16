@@ -14,7 +14,7 @@ const Join = () => {
                     </p>
                     <Link
                         to="/contact-us"
-                        className="inline-block bg-violet-50 text-white px-8 py-3 rounded-lg hover:bg-violet-100 transition-colors"
+                        className="inline-block bg-violet-500 text-white px-8 py-3 rounded-lg hover:bg-green-600 transition-colors"
                     >
                         Get in Touch
                     </Link>

@@ -36,7 +36,7 @@ const CompanyTimeline = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         className="flex gap-4"
                     >
-                        <div className="w-24 font-bold text-violet-50">{item.year}</div>
+                        <div className="w-24 font-bold text-violet-500">{item.year}</div>
                         <div className="flex-1 bg-white p-6 rounded-lg shadow-md">
                             <h3 className="font-semibold mb-2">{item.title}</h3>
                             <p className="text-black-600">{item.description}</p>

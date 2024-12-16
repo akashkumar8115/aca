@@ -75,39 +75,39 @@ export const memberData = [
         quote: "Building a business is about turning ideas into reality, learning from every challenge, and working together to create something meaningful.",
         photo: Manish,
     },
-    // {
-    //     id: 3,
-    //     name: "Akash Kumar",
-    //     role: "Full Stack Developer | Technical Head",
-    //     bio: "I am a dedicated full-stack developer and currently the Technical Head for ACA Pvt.Ltd, where I lead a team on innovative tech projects. With expertise in React, Node.js, MongoDB, and Express.js, I specialize in creating dynamic, user-centered web applications. Currently, I am pursuing an integrated BTech + MTech degree in Electronics and Communication Engineering at NIT Hamirpur.",
-    //     skills: [
-    //         "Frontend - React.js", "Backend - Node.js , Express.js", "Database - MongoDB , MySQL", "C", "C++", "Javascript", "Python", "Leadership", "Team Management", "Project Coordination", "Technical Guidance"
-    //     ],
-    //     education: " Integrated BTech + MTech in Electronics and Communication Engineering National Institute of Technology (NIT) Hamirpur",
-    //     socialLinks: [
-    //         {
-    //             id: "a",
-    //             title: "linkedIn",
-    //             url: "https://www.linkedin.com/in/akash-kumar-54073a209/",
-    //             icon: Linkedinicon,
-    //         },
-    //         {
-    //             id: "b",
-    //             title: "github",
-    //             url: "https://github.com/akashkumar8115",
-    //             icon: Githubicon
-    //         },
-    //         {
-    //             id: "c",
-    //             title: "Portfolio",
-    //             url: "https://akash8115.netlify.app/",
-    //             icon: FaLink,
-    //         },
+    {
+        id: 3,
+        name: "Akash Kumar",
+        role: "Full Stack Developer | Technical Head",
+        bio: "I am a dedicated full-stack developer and currently the Technical Head for ACA Pvt.Ltd, where I lead a team on innovative tech projects. With expertise in React, Node.js, MongoDB, and Express.js, I specialize in creating dynamic, user-centered web applications. Currently, I am pursuing an integrated BTech + MTech degree in Electronics and Communication Engineering at NIT Hamirpur.",
+        skills: [
+            "Frontend - React.js", "Backend - Node.js , Express.js", "Database - MongoDB , MySQL", "C", "C++", "Javascript", "Python", "Leadership", "Team Management", "Project Coordination", "Technical Guidance"
+        ],
+        education: " Integrated BTech + MTech in Electronics and Communication Engineering National Institute of Technology (NIT) Hamirpur",
+        socialLinks: [
+            {
+                id: "a",
+                title: "linkedIn",
+                url: "https://www.linkedin.com/in/akash-kumar-54073a209/",
+                icon: Linkedinicon,
+            },
+            {
+                id: "b",
+                title: "github",
+                url: "https://github.com/akashkumar8115",
+                icon: Githubicon
+            },
+            {
+                id: "c",
+                title: "Portfolio",
+                url: "https://akash8115.netlify.app/",
+                icon: FaLink,
+            },
 
-    //     ],
-    //     quote: "Lead by example, inspire through action.",
-    //     photo: Akash,
-    // },
+        ],
+        quote: "Lead by example, inspire through action.",
+        photo: Akash,
+    },
     {
         id: 4,
         name: "Deepti Mishra",

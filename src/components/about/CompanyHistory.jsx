@@ -48,11 +48,11 @@ const CompanyHistory = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         className="bg-white p-6 rounded-xl shadow-lg"
                     >
-                        <h3 className="text-xl font-semibold text-violet-50 mb-4">{milestone.year}</h3>
+                        <h3 className="text-xl font-semibold text-violet-500 mb-4">{milestone.year}</h3>
                         <ul className="space-y-2">
                             {milestone.events.map((event, idx) => (
                                 <li key={idx} className="flex items-center gap-2">
-                                    <span className="w-2 h-2 bg-violet-50 rounded-full"></span>
+                                    <span className="w-2 h-2 bg-violet-500 rounded-full"></span>
                                     <span className="text-black-600">{event}</span>
                                 </li>
                             ))}

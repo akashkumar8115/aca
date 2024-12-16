@@ -102,7 +102,7 @@ const About = () => {
                         </p>
                         <Link
                             to="/contact-us"
-                            className="inline-block bg-violet-50 text-white px-8 py-3 rounded-lg hover:bg-violet-100 transition-colors"
+                            className="inline-block bg-violet-500 text-white px-8 py-3 rounded-lg hover:bg-green-500 transition-colors"
                         >
                             Get in Touch
                         </Link>
@@ -111,9 +111,8 @@ const About = () => {
             </div>
 
             {/* Partners Section */}
-            <div className="pt-24 min-h-screen bg-gradient-to-b from-white to-violet-100 mt-28 pb-12">
+            <div className="pt-24 min-h-screen bg-gradient-to-b from-white to-violet-100 pb-12">
                 <div className="w-11/12 lg:w-10/12 mx-auto">
-
                     <CompanyTimeline />
                     <FounderProfile />
                     <ValueSection />

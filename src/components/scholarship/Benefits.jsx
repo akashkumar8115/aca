@@ -39,7 +39,7 @@ const Benefits = () => {
                             transition={{ delay: index * 0.1 }}
                             className="bg-white p-6 rounded-lg shadow-lg text-center"
                         >
-                            <div className="text-violet-50 text-3xl mb-4 flex justify-center">
+                            <div className="text-violet-500 text-3xl mb-4 flex justify-center">
                                 {benefit.icon}
                             </div>
                             <h3 className="text-xl font-bold mb-2">{benefit.title}</h3>

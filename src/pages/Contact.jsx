@@ -84,7 +84,7 @@ const Contact = () => {
     ]
 
     return (
-        <div className="pt-24 min-h-screen bg-gradient-to-b from-white to-violet-100 mt-28">
+        <div className="min-h-screen bg-gradient-to-b from-white to-violet-100 mt-24">
             <div className="w-11/12 lg:w-10/12 mx-auto pb-16">
                 {/* Header Section */}
                 <motion.div
@@ -108,8 +108,7 @@ const Contact = () => {
                             transition={{ delay: index * 0.1 }}
                             className="bg-white p-6 rounded-xl shadow-lg"
                         >
-                            <div className="text-violet-50 mb-4">{info.icon}</div>
-                            <h3 className="text-xl font-semibold mb-3">{info.title}</h3>
+                            <div className="text-violet-500 mb-4 flex">{info.icon} <h3 className="text-xl font-semibold mb-3"> {info.title}</h3></div>
                             <ul className="space-y-2">
                                 {info.details.map((detail, idx) => (
                                     <li key={idx} className="text-black-600">{detail}</li>
@@ -131,7 +130,7 @@ const Contact = () => {
                                         type="text"
                                         value={formData.name}
                                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                                        className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-violet-50"
+                                        className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-violet-500 focus:outline-none focus:ring-opacity-50"
                                         required
                                         placeholder="Your name"
                                     />
@@ -142,7 +141,7 @@ const Contact = () => {
                                         type="email"
                                         value={formData.email}
                                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                                        className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-violet-50"
+                                        className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-violet-500 focus:outline-none focus:ring-opacity-50"
                                         required
                                         placeholder="Your email"
                                     />
@@ -156,7 +155,7 @@ const Contact = () => {
                                         type="tel"
                                         value={formData.phone}
                                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                                        className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-violet-50"
+                                        className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-violet-500 focus:outline-none focus:ring-opacity-50"
                                         placeholder="Your phone number"
                                     />
                                 </div>
@@ -166,7 +165,7 @@ const Contact = () => {
                                         type="text"
                                         value={formData.subject}
                                         onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                                        className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-violet-50"
+                                        className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-violet-500 focus:outline-none focus:ring-opacity-50"
                                         required
                                         placeholder="Message subject"
                                     />
@@ -179,7 +178,7 @@ const Contact = () => {
                                     value={formData.message}
                                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                                     rows="5"
-                                    className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-violet-50"
+                                    className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-violet-500 focus:outline-none focus:ring-opacity-50"
                                     required
                                     placeholder="Your message"
                                 ></textarea>
@@ -188,7 +187,7 @@ const Contact = () => {
                             <button
                                 type="submit"
                                 disabled={isSubmitting}
-                                className={`w-full bg-violet-50 text-white py-3 rounded-lg font-semibold
+                                className={`w-full bg-violet-500 focus:outline-none focus:ring-opacity-50" text-white py-3 rounded-lg font-semibold
                                     ${isSubmitting ? 'opacity-70 cursor-not-allowed' : 'hover:bg-violet-100'}
                                     transition-colors`}
                             >

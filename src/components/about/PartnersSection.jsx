@@ -22,7 +22,7 @@ const PartnersSection = () => {
             <div className="grid md:grid-cols-3 gap-6 px-6">
                 {partners.map((category, index) => (
                     <div key={index} className="text-center">
-                        <h3 className="text-xl font-semibold mb-4 text-violet-50">{category.category}</h3>
+                        <h3 className="text-xl font-semibold mb-4 text-violet-500">{category.category}</h3>
                         <ul className="space-y-2">
                             {category.list.map((partner, idx) => (
                                 <li key={idx} className="text-black-600">{partner}</li>

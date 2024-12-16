@@ -33,12 +33,12 @@ const TestStructure = () => {
                             transition={{ delay: index * 0.2 }}
                             className="bg-white p-6 rounded-lg shadow-lg"
                         >
-                            <h3 className="text-xl font-bold mb-4 text-violet-50">{test.title}</h3>
+                            <h3 className="text-xl font-bold mb-4 text-violet-500">{test.title}</h3>
                             <p className="text-black-600 mb-4">{test.description}</p>
                             <ul className="space-y-2">
                                 {test.subjects.map((subject, idx) => (
                                     <li key={idx} className="flex items-center">
-                                        <span className="w-2 h-2 bg-violet-50 rounded-full mr-2"></span>
+                                        <span className="w-2 h-2 bg-violet-500 rounded-full mr-2"></span>
                                         {subject}
                                     </li>
                                 ))}

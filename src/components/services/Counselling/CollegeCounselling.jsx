@@ -23,7 +23,7 @@ const CollegeCounselling = () => {
 
                     <motion.button
                         onClick={() => setShowAll(!showAll)}
-                        className=" py-2  transition bg-blue-500 rounded-lg text-white shadow-md px-4 md:py-3 bg-green-500 hover:bg-violet-50 focus:outline-none "
+                        className=" py-2  transition bg-blue-500 rounded-lg text-white shadow-md px-4 md:py-3 bg-green-500 hover:bg-violet-500 focus:outline-none "
 
                     >
                         {showAll ? "View Less" : "View More"}
@@ -43,6 +43,9 @@ const CollegeCounselling = () => {
                                 transition={{ duration: 0.5 }}
                                 viewport={{ once: true }}
                             >
+                                <span className="relative text-lg font-semibold text-black">
+                                    {/* {item.title} */}
+                                </span>
                                 <Link to={`https://docs.google.com/forms/d/e/1FAIpQLSdCC8cTzO5YZOkH89hKTmRRxyEn05SMuVNE2KKeD5oL7P3diQ/viewform?usp=sf_link`}>
                                     <div
                                         className="relative flex items-center justify-center h-40 p-6 text-center transition duration-300 transform bg-center bg-cover rounded-lg sm:p-8 sm:h-48 md:h-56 hover:scale-105 hover:shadow-lg border text-white"
@@ -50,14 +53,14 @@ const CollegeCounselling = () => {
                                             backgroundImage: `url(${item.image})`,
                                         }}
                                     >
-                                        <div className="absolute inset-0 bg-black-900 rounded-lg opacity-50">
-
+                                        <div className="absolute inset-0 bg-black-100 rounded-lg opacity-50">
+                                            <h2 className="relative text-lg font-semibold text-white bg-black rounded-lg p-2">
+                                                {item.title}
+                                            </h2>
                                         </div>
-                                        <span className="relative text-lg font-semibold ">
-                                            {item.title}
-                                        </span>
                                     </div>
                                 </Link>
+
                             </motion.div>
                         ))}
                     </AnimatePresence>

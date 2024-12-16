@@ -22,9 +22,7 @@ const CHeroSection = () => {
     {/* --------- right side ------------ */}
 
     <div data-aos="fade-right" className='xxl:w-[40%] xmd:w-[45%] xsm:w-[80%] w-[95%] '>
-
-        <img src={counsellingImg} alt="counselling" className='w-full h-full object-contain aspect-square' />
-
+        <img src={counsellingImg} alt="counselling" className='object-contain aspect-square h-80 w-80 m-auto' />
     </div>
 
 

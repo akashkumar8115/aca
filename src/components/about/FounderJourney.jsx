@@ -40,11 +40,11 @@ const FounderJourney = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         className="mb-8 last:mb-0"
                     >
-                        <h3 className="text-xl font-semibold text-violet-50 mb-4">{step.phase}</h3>
+                        <h3 className="text-xl font-semibold text-violet-500 mb-4">{step.phase}</h3>
                         <ul className="space-y-3">
                             {step.details.map((detail, idx) => (
                                 <li key={idx} className="flex items-start gap-3">
-                                    <span className="w-2 h-2 bg-violet-50 rounded-full mt-2"></span>
+                                    <span className="w-2 h-2 bg-violet-500 rounded-full mt-2"></span>
                                     <span className="text-black-600">{detail}</span>
                                 </li>
                             ))}

@@ -14,7 +14,7 @@ const FounderProfile = () => {
                 </div>
                 <div className="p-8 md:w-2/3">
                     <h2 className="text-2xl font-semibold mb-4">Mohd Shadab Qusari</h2>
-                    <h3 className="text-violet-50 font-medium mb-4">Founder & CEO</h3>
+                    <h3 className="text-violet-500 font-medium mb-4">Founder & CEO</h3>
                     <div className="space-y-4 text-black-600">
                         <p>
                             A visionary entrepreneur and Electronics Engineer from Panjab University, Chandigarh. Shadab's journey from a rural background to founding ACA Pvt. Ltd. exemplifies his commitment to transforming career development in India.

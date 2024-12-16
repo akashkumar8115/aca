@@ -2,32 +2,29 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import { useAuth } from '../../context/AuthContext';
+import { toast } from 'react-toastify';
 
 const Login = () => {
     const navigate = useNavigate();
+    const { login, loading } = useAuth();
     const [formData, setFormData] = useState({
         email: '',
         password: ''
     });
-    const [loading, setLoading] = useState(false);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        setLoading(true);
-        try {
-            const response = await axios.post('http://localhost:5000/api/auth/login', formData);
-            localStorage.setItem('token', response.data.token);
-            localStorage.setItem('user', JSON.stringify(response.data.user));
-            navigate('/profile');
-        } catch (error) {
-            console.error('Login failed:', error.response?.data?.message);
-        } finally {
-            setLoading(false);
+        const success = await login(formData);
+        setFormData({ email: '', password: '' });
+        if (success) {
+            navigate('/dashboard');
         }
     };
 
+
     return (
-        <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white pt-32">
+        <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white pt-24">
             <div className="container mx-auto px-2 py-16">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -42,7 +39,7 @@ const Login = () => {
                                 type="email"
                                 className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                                 placeholder="Enter your email"
-                                onChange={(e) => setFormData({...formData, email: e.target.value})}
+                                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                                 required
                             />
                         </div>
@@ -52,7 +49,7 @@ const Login = () => {
                                 type="password"
                                 className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                                 placeholder="Enter your password"
-                                onChange={(e) => setFormData({...formData, password: e.target.value})}
+                                onChange={(e) => setFormData({ ...formData, password: e.target.value })}
                                 required
                             />
                         </div>
@@ -63,11 +60,15 @@ const Login = () => {
                         </div>
                         <button
                             type="submit"
-                            className="w-full bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 transition-colors duration-300"
+                            className={`w-full py-3 rounded-lg transition-colors duration-300 ${loading
+                                ? 'bg-gray-400 text-gray-800 cursor-not-allowed' // Disabled state
+                                : 'bg-green-600 text-white hover:bg-green-700'
+                                }`}
                             disabled={loading}
                         >
                             {loading ? 'Signing in...' : 'Sign In'}
                         </button>
+
                     </form>
                     <p className="text-center mt-6 text-gray-600">
                         Don't have an account?{' '}

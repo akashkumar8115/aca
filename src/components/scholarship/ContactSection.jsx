@@ -12,7 +12,7 @@ const ContactSection = () => {
                         whileHover={{ scale: 1.05 }}
                         className="bg-white p-6 rounded-lg shadow-lg text-center"
                     >
-                        <FaEnvelope className="text-3xl text-violet-50 mx-auto mb-4" />
+                        <FaEnvelope className="text-3xl text-violet-500 mx-auto mb-4" />
                         <h3 className="text-xl font-bold mb-2">Email Support</h3>
                         <p className="text-black-600">Infoonaca@gmail.com</p>
                     </motion.div>
@@ -21,18 +21,18 @@ const ContactSection = () => {
                         whileHover={{ scale: 1.05 }}
                         className="bg-white p-6 rounded-lg shadow-lg text-center"
                     >
-                        <FaPhone className="text-3xl text-violet-50 mx-auto mb-4" />
+                        <FaPhone className="text-3xl text-violet-500 mx-auto mb-4" />
                         <h3 className="text-xl font-bold mb-2">Phone Support</h3>
-                        <p className="text-black-600">+91 9120325950</p>
+                        <p className="text-black-600">+91 91203259500</p>
                     </motion.div>
 
                     <motion.div
                         whileHover={{ scale: 1.05 }}
                         className="bg-white p-6 rounded-lg shadow-lg text-center"
                     >
-                        <FaWhatsapp className="text-3xl text-violet-50 mx-auto mb-4" />
+                        <FaWhatsapp className="text-3xl text-violet-500 mx-auto mb-4" />
                         <h3 className="text-xl font-bold mb-2">WhatsApp Support</h3>
-                        <p className="text-black-600">+91 9120325950</p>
+                        <p className="text-black-600">+91 91203259500</p>
                     </motion.div>
                 </div>
             </div>

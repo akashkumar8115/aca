@@ -44,7 +44,7 @@ const ServiceComparison = () => {
         <div className="overflow-x-auto">
             <table className="w-full bg-white rounded-xl shadow-lg">
                 <thead>
-                    <tr className="bg-violet-50 text-white">
+                    <tr className="bg-violet-500 text-white">
                         <th className="p-4 text-left">Features</th>
                         <th className="p-4 text-center">Basic</th>
                         <th className="p-4 text-center">Professional</th>

@@ -27,7 +27,7 @@ const LocationsSection = () => {
                     <div key={index} className="text-center p-6 border rounded-lg">
                         <h3 className="text-xl font-semibold mb-3">{location.city}</h3>
                         <p className="text-black-600 mb-2">{location.address}</p>
-                        <p className="text-violet-50">{location.contact}</p>
+                        <p className="text-violet-500">{location.contact}</p>
                     </div>
                 ))}
             </div>

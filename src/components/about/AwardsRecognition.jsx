@@ -34,7 +34,7 @@ const AwardsRecognition = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         className="border rounded-lg p-6"
                     >
-                        <div className="text-violet-50 font-medium mb-2">{award.year}</div>
+                        <div className="text-violet-500 font-medium mb-2">{award.year}</div>
                         <h3 className="text-xl font-semibold mb-2">{award.title}</h3>
                         <div className="text-sm text-black-600 mb-3">{award.organization}</div>
                         <p className="text-black-600">{award.description}</p>

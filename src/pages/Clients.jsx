@@ -71,7 +71,7 @@ const Clients = () => {
                             transition={{ delay: index * 0.1 }}
                             className="bg-white p-6 rounded-xl shadow-lg text-center"
                         >
-                            <div className="text-3xl md:text-4xl font-bold text-violet-50 mb-2">
+                            <div className="text-3xl md:text-4xl font-bold text-violet-500 mb-2">
                                 {stat.number}
                             </div>
                             <div className="text-black-600">{stat.label}</div>
@@ -127,7 +127,7 @@ const Clients = () => {
                     <motion.button
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        className="bg-violet-50 text-white px-8 py-3 rounded-lg hover:bg-violet-100 transition-colors"
+                        className="bg-violet-500 text-white px-8 py-3 rounded-lg hover:bg-violet-100 transition-colors"
                     >
                         Contact Us Today
                     </motion.button>

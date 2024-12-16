@@ -6,7 +6,7 @@ import InternshipType from '../components/internshipJob/InternshipType';
 
 const InternshipsAndJobs = () => {
     return (
-        <div className='flex flex-col gap-y-16 xs:gap-y-0'>
+        <div className='flex flex-col xs:flex-row justify-center items-center'>
 
             <div className="bg-gradient-to-br from-gray-50 to-blue-100 ">
                 <motion.div

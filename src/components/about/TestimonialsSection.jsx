@@ -38,7 +38,7 @@ const TestimonialsSection = () => {
                         <div>
                             <h3 className="font-semibold">{item.name}</h3>
                             <p className="text-sm text-black-600">{item.role}</p>
-                            <p className="text-sm text-violet-50">{item.company}</p>
+                            <p className="text-sm text-violet-500">{item.company}</p>
                         </div>
                     </motion.div>
                 ))}

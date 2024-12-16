@@ -9,13 +9,18 @@ const Footer = () => {
     const { company, services, quickLinks, resources, contact, legal } = footerData
 
     return (
-        <footer className="w-full shadow-md bg-gray-100">
+        <footer className="w-full shadow-md bg-black text-white">
             <div className="w-11/12 lg:w-10/12 mx-auto py-12">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
                     {/* Company Info */}
                     <div className="space-y-6">
-                        <img src={logo} alt={company.name} className="w-40" />
-                        <p className="text-gray-600 leading-relaxed">
+                        <img
+                            src={logo || '/fallback-logo.png'}
+                            alt={company?.name || 'Company Logo'}
+                            className="w-40 h-auto bg-white rounded-md"
+                            loading="lazy"
+                        />
+                        <p className="text-white leading-relaxed">
                             {company.description}
                         </p>
                         <div className="flex gap-4">
@@ -38,13 +43,14 @@ const Footer = () => {
 
                     {/* Services */}
                     <div>
-                        <h3 className="text-xl font-bold text-gray-800 mb-6">Our Services</h3>
+                        <h3 className="text-xl font-bold text-white mb-6">Our Services</h3>
                         <ul className="space-y-4">
                             {services.map((service) => (
                                 <li key={service.id}>
                                     <Link
                                         to={service.path}
-                                        className="text-gray-600 hover:text-green-600 transition-colors flex items-center gap-2"
+                                        className="text-white hover:text-green-600 transition-colors inline-flex items-center gap-2"
+
                                     >
                                         <span className="w-2 h-2 bg-violet-600 rounded-full"></span>
                                         {service.title}
@@ -56,16 +62,16 @@ const Footer = () => {
 
                     {/* Quick Links */}
                     <div>
-                        <h3 className="text-xl font-bold text-gray-800 mb-6">Quick Links</h3>
+                        <h3 className="text-xl font-bold text-white mb-6">Quick Links</h3>
                         <ul className="space-y-4">
                             {quickLinks.map((link) => (
                                 <li key={link.id}>
                                     <Link
                                         to={link.path}
-                                        className="text-gray-600 hover:text-green-600 transition-colors flex items-center gap-2"
+                                        className="text-white hover:text-green-600 transition-colors inline-flex items-center gap-2"
                                     >
                                         <span className="w-2 h-2 bg-violet-600 rounded-full hover:bg-green-600"></span>
-                                        {link.title}
+                                        <span>{link.title}</span>
                                     </Link>
                                     {link.subLinks && (
                                         <ul className="ml-6 mt-2 space-y-2">
@@ -73,7 +79,7 @@ const Footer = () => {
                                                 <li key={index}>
                                                     <Link
                                                         to={subLink.path}
-                                                        className="text-gray-500 hover:text-green-600 transition-colors text-sm"
+                                                        className="text-white hover:text-green-600 transition-colors text-sm"
                                                     >
                                                         <li> {subLink.title}</li>
                                                     </Link>
@@ -88,21 +94,21 @@ const Footer = () => {
 
                     {/* Contact Info */}
                     <div>
-                        <h3 className="text-xl font-bold text-gray-800 mb-6">Contact Us</h3>
+                        <h3 className="text-xl font-bold text-white mb-6">Contact Us</h3>
                         <div className="space-y-4">
-                            <div className="flex items-start gap-3 text-gray-600">
+                            <div className="flex items-start gap-3 text-white">
                                 <IoLocationSharp className="text-violet-600 text-xl mt-1" />
                                 <p>{contact.address}</p>
                             </div>
-                            <a href={`mailto:${contact.email}`} className="flex items-center gap-3 text-gray-600 hover:text-violet-600">
+                            <a href={`mailto:${contact.email}`} className="flex items-center gap-3 text-white hover:text-violet-600">
                                 <IoMail className="text-violet-600 text-xl" />
                                 {contact.email}
                             </a>
-                            <a href={`tel:${contact.phone}`} className="flex items-center gap-3 text-gray-600 hover:text-violet-600">
+                            <a href={`tel:${contact.phone}`} className="flex items-center gap-3 text-white hover:text-violet-600">
                                 <IoCall className="text-violet-600 text-xl" />
                                 {contact.phone}
                             </a>
-                            <p className="text-gray-600 mt-4">
+                            <p className="text-white mt-4">
                                 {contact.supportHours}
                             </p>
                         </div>
@@ -112,13 +118,13 @@ const Footer = () => {
                 {/* Bottom Section */}
                 <div className="mt-12 pt-8 border-t border-gray-200">
                     <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-                        <p className="text-gray-600">© 2024 {company.name}. All rights reserved.</p>
+                        <p className="text-white">© 2024 {company.name}. All rights reserved.</p>
                         <div className="flex flex-wrap justify-center gap-6">
                             {legal.map((item) => (
                                 <Link
                                     key={item.id}
                                     to={item.path}
-                                    className="text-gray-600 hover:text-violet-600 transition-colors"
+                                    className="text-white hover:text-violet-600 transition-colors"
                                 >
                                     {item.title}
                                 </Link>

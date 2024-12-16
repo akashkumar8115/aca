@@ -46,7 +46,7 @@ const FounderJourney = () => {
                         <ul className="space-y-3">
                             {step.details.map((detail, idx) => (
                                 <li key={idx} className="flex items-start gap-3">
-                                    <span className="w-2 h-2 bg-violet-50 rounded-full mt-2"></span>
+                                    <span className="w-2 h-2 bg-violet-500 rounded-full mt-2"></span>
                                     <span className="text-black-600">{detail}</span>
                                 </li>
                             ))}

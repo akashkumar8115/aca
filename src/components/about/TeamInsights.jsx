@@ -56,7 +56,7 @@ const TeamInsights = () => {
                     <div key={index} className="bg-white p-6 rounded-xl shadow-lg">
                         <div className="mb-4">
                             <h3 className="text-xl font-semibold">{member.name}</h3>
-                            <p className="text-violet-50">{member.role}</p>
+                            <p className="text-violet-500">{member.role}</p>
                         </div>
                         
                         <div className="mb-4">
@@ -82,7 +82,7 @@ const TeamInsights = () => {
                             </div>
                         </div>
 
-                        <blockquote className="italic text-black-600 border-l-4 border-violet-50 pl-4 mt-4">
+                        <blockquote className="italic text-black-600 border-l-4 border-violet-500 pl-4 mt-4">
                             "{member.quote}"
                         </blockquote>
                     </div>

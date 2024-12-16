@@ -42,7 +42,7 @@ const ServiceProcess = () => {
                         className="bg-white rounded-xl shadow-lg p-6 relative"
                     >
                         <div className="text-4xl mb-4">{step.icon}</div>
-                        <div className="absolute top-4 right-4 text-3xl font-bold text-violet-100 opacity-50">
+                        <div className="absolute top-4 right-4 text-3xl font-bold text-violet-500 opacity-100">
                             {step.number}
                         </div>
                         <h3 className="text-xl font-semibold mb-3">{step.title}</h3>

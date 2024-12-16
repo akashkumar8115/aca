@@ -43,7 +43,7 @@ const OurImapct = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 className="text-center"
                             >
-                                <h3 className="text-3xl font-bold text-violet-50 mb-2">{item.number}</h3>
+                                <h3 className="text-3xl font-bold text-violet-500 mb-2">{item.number}</h3>
                                 <h4 className="text-xl font-semibold mb-2">{item.title}</h4>
                                 <p className="text-black-600">{item.description}</p>
                             </motion.div>
